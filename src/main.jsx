@@ -10,7 +10,8 @@ import ContactPage from "./pages/ContactPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Router>
+    
+    <Router basename="/Labour-Bridge">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<AboutPage />} />
