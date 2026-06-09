@@ -128,7 +128,7 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex space-x-4 mt-6">
               <a
-                href="https://www.instagram.com/bridgelabour?igsh=MTE5dDg4MWdlNTE5eg==&utm_source=ig_contact_invite"
+                href="https://www.instagram.com/labour_bridges_india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-yellow-500 hover:text-black p-3 rounded-lg transition-colors"
@@ -144,7 +144,7 @@ const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://www.facebook.com/share/1CjVmWWBBc/"
+                href="https://www.facebook.com/p/Labour-Bridges-India-61583904236545/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-yellow-500 hover:text-black p-3 rounded-lg transition-colors"

@@ -347,8 +347,268 @@ const OngoingProjectsSection = () => {
       image: "/images/gur4.jpg",
       status: "Active",
     },
+
+  ];
+  
+  // Kolar Bengalore projects
+  const bangaloreProjects = [
+    {
+      id: 1,
+      title: "Building IT Park",
+      location: "Kolar, Bangalore",
+      image: "/kolar/Kolar1.jpeg",
+      status: "Active",
+    },    
+       {
+      id: 2,
+      title: "Building IT Park",
+      location: "Kolar, Bangalore",
+      image: "/kolar/Kolar2.jpeg",
+      status: "Active",
+    },    
+       {
+      id: 3,
+      title: "Building IT Park",
+      location: "Kolar, Bangalore",
+      image: "/kolar/Kolar3.jpeg",
+      status: "Active",
+    },    
+       {
+      id: 4,
+      title: "Building IT Park",
+      location: "Kolar, Bangalore",
+      image: "/kolar/Kolar4.jpeg",
+      status: "Active",
+    },    
+    
+ 
+  
+    
+  ];
+  
+  
+  // Hosur projects
+  const hosurProjects = [
+    {
+      id: 1,
+      title: "Building IT Park",
+      location: "Hosur, Tamil Nadu",
+      image: "/hosur/hosur1.jpeg",
+      status: "Active",
+    },   {
+      id: 2,
+      title: "Building IT Park",
+      location: "Hosur, Tamil Nadu",
+      image: "/hosur/hosur2.jpeg",
+      status: "Active",
+    },   {
+      id: 3,
+      title: "Building IT Park",
+      location: "Hosur, Tamil Nadu",
+      image: "/hosur/hosur3.jpeg",
+      status: "Active",
+    },   {
+      id: 4,
+      title: "Building IT Park",
+      location: "Hosur, Tamil Nadu",
+      image: "/hosur/hosur4.jpeg",
+      status: "Active",
+    },    
+          
+    
+ 
+  
+    
+  ];// Sarjapur projects
+  const sarjapurProjects = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur1.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 2,
+      title: "Construction site",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur2.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 3,
+      title: "Site Labour Camp",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur3.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 4,
+      title: "Site Labour Camp",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur4.jpeg",
+      status: "Active",
+    },    
+              
+  ];
+  
+  // Sarjapur projects
+  const sarjapurProjects2 = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur5.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 2,
+      title: "Construction site",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur6.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 3,
+      title: "Site Labour Camp",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur7.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 4,
+      title: "Site Labour Camp",
+      location: "Sarjapur, Bangalore",
+      image: "/sarjapur/sarjapur8.jpeg",
+      status: "Active",
+    },     
+              
+  ];// Chennai projects
+  const chennaiProjects = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai/chennai1.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 2,
+      title: "Construction site",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai/chennai2.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 3,
+      title: "Construction site",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai/chennai3.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 4,
+      title: "Site Labour Camp",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai/chennai4.jpeg",
+      status: "Active",
+    },     
+              
+  ];
+  const guddurProjects = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Gudur, Andhra Pradesh",
+      image: "/guddur/guddur1.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 2,
+      title: "Construction site",
+      location: "Gudur, Andhra Pradesh",
+      image: "/guddur/guddur2.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 3,
+      title: "Site Labour Camp",
+      location: "Gudur, Andhra Pradesh",
+      image: "/guddur/guddur3.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 4,
+      title: "Site Labour Camp",
+      location: "Gudur, Andhra Pradesh",
+      image: "/guddur/guddur4.jpeg",
+      status: "Active",
+    },     
+              
+  ];
+const mundraNMRProjects = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Mundra, Gujarat",
+      image: "/mundra/mundra1.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 2,
+      title: "Construction site",
+      location: "Mundra, Gujarat",
+      image: "/mundra/mundra2.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 3,
+      title: "Site Labour Camp",
+      location: "Mundra, Gujarat",
+      image: "/mundra/mundra3.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 4,
+      title: "Site Labour Camp",
+      location: "Mundra, Gujarat",
+      image: "/mundra/mundra4.jpeg",
+      status: "Active",
+    },     
+              
   ];
 
+  const cyberCityProjects = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Chennai, Tamil Nadu",
+      image: "/cyber city/cyber city1.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 2,
+      title: "Construction site",
+      location: "Chennai, Tamil Nadu",
+      image: "/cyber city/cyber city2.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 3,
+      title: "Site Labour Camp",
+      location: "Chennai, Tamil Nadu",
+      image: "/cyber city/labour camp1.jpeg",
+      status: "Active",
+    },    
+          {
+      id: 4,
+      title: "Site Labour Camp",
+      location: "Chennai, Tamil Nadu",
+      image: "/cyber city/labour camp2.jpeg",
+      status: "Active",
+    },     
+              
+  ];
   return (
     <section
       id="ongoing-projects"
@@ -369,15 +629,15 @@ const OngoingProjectsSection = () => {
         </div>
 
         {/* Ongoing Projects Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid lg:grid-cols-3 gap-18 mb-20">
           {ongoingProjects.map((project, index) => (
             <div
               key={project.id}
               className="rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group transform hover:scale-105 hover:-translate-y-2"
             >
               {/* Project Image Only */}
-              <div className="relative h-80 overflow-hidden">
-                <img
+              <div className="relative h-70 overflow-hidden">
+                <img loading="lazy"
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -413,14 +673,14 @@ const OngoingProjectsSection = () => {
           </div>
 
           {/* Hyderabad Projects Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
             {hydProjects.map((project, index) => (
               <div
                 key={project.id}
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -451,7 +711,7 @@ const OngoingProjectsSection = () => {
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               <span className="text-yellow-500">Gujarat ( Mundra )</span> Sites
-              Location
+              Location (Supply)
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -469,7 +729,7 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -499,7 +759,7 @@ const OngoingProjectsSection = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Surat</span> Sites Location
+              <span className="text-yellow-500">Surat</span> Sites Location (Supply)
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -517,7 +777,7 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -547,7 +807,7 @@ const OngoingProjectsSection = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Mumbai</span> Sites Location
+              <span className="text-yellow-500">Mumbai</span> Sites Location (Supply)
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -565,7 +825,7 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -595,8 +855,8 @@ const OngoingProjectsSection = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Andhra Pradesh</span> Sites
-              Location <span className="text-gray-600">(Airport)</span>
+              <span className="text-yellow-500">Andhra Pradesh (Airport)</span> Sites
+              Location (Supply) <span className="text-gray-600"></span>
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -614,7 +874,7 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -644,7 +904,7 @@ const OngoingProjectsSection = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Tamil Nadu</span> Sites Location{" "}
+              <span className="text-yellow-500">Tamil Nadu</span> Sites Location (Supply){" "}
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -662,7 +922,7 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -692,7 +952,7 @@ const OngoingProjectsSection = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Orissa</span> Sites Location
+              <span className="text-yellow-500">Orissa</span> Sites Location (Supply)
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -710,7 +970,7 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -740,8 +1000,8 @@ const OngoingProjectsSection = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Adani Khavrah Gujarat</span>{" "}
-              Sites Location
+              <span className="text-yellow-500">Adani Khavrah (Gujarat)</span>{" "}
+              Sites Location (Supply)
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -759,7 +1019,7 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -790,7 +1050,7 @@ const OngoingProjectsSection = () => {
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               <span className="text-yellow-500">Gurgaon (Haryana)</span> Sites
-              Location
+              Location (Supply)
             </h3>
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
@@ -808,7 +1068,61 @@ const OngoingProjectsSection = () => {
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+
+
+
+        </div>
+        
+        
+        {/* Kolar Bangalore Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Kolar (Bangalore)</span> Sites
+              Location (Supply)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Kolar, Bangalore</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Kolar Bangalore Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {bangaloreProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -833,6 +1147,382 @@ const OngoingProjectsSection = () => {
             ))}
           </div>
         </div>
+
+
+{/* hosur Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Hosur (Tamil Nadu)</span> Sites
+              Location (Supply)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Hosur, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* hosur Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {hosurProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>{/* sarjapur Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Sarjapur (Bangalore)</span> Sites
+              Location 1 (Measurement)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Sarjapur, Bangalore</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* sarjapur Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {sarjapurProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        
+        {/* sarjapur Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Sarjapur (Bangalore)</span> Sites
+              Location 2 (Measurement)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Sarjapur, Bangalore</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* sarjapur Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {sarjapurProjects2.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* chennai Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Chennai (Tamil Nadu)</span> Sites
+              Location  (Supply)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Chennai, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* chennai Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {chennaiProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        
+        
+        
+         {/* guddur Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Gudur (Andhra Pradesh)</span> Sites
+              Location  (Supply)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Gudur, Andhra Pradesh</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* guddur Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {guddurProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        
+        
+        {/* mundra NMR Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Mundra (Gujarat)</span> Sites
+              Location  (NMR-Supply)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Mundra, Gujarat</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* mundra Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {mundraNMRProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+
+  {/*cyber city Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Cyber City (Chennai)</span> Sites
+              Location  (Supply)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Cyber City, Chennai</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* mundra Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {cyberCityProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+
+
+
 
         {/* Bottom Info */}
         <div className="text-center">

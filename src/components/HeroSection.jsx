@@ -1,21 +1,39 @@
 import React from "react";
+import { useRef, useState,useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Users, Building2, Award } from "lucide-react";
 import { FaFacebook, FaInstagram, FaWhatsapp,FaLinkedin   } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+import SEO from "./SEO";
+
 
 
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+
+
+  
   return (
     <section className="relative bg-gradient-to-br from-black via-gray-900 to-gray-800 min-h-screen flex items-center">
+
+        {/* seo section */}
+
+      <SEO title="Labour Bridge - Connecting Skilled Workers with Opportunities" description="Labour Bridge is a platform that connects skilled workers with job opportunities in the construction industry. We provide a seamless experience for both workers and employers, ensuring that the right talent meets the right projects." />
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-pattern"></div>
+        
+        <div className="absolute inset-0 bg-pattern">
+          
+        </div>
       </div>
 
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 pt-20 sm:pt-24 overflow-x-hidden">
+
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+          
           {/* Left Content */}
           <motion.div
             className="text-white"
@@ -23,6 +41,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
+          
             <motion.h1
               className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
               initial={{ opacity: 0, y: 30 }}
@@ -45,6 +64,42 @@ const HeroSection = () => {
               skilled professionals with industry leaders across construction,
               manufacturing, and infrastructure sectors.
             </motion.p>
+
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 mb-12 w-full"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+             
+
+
+
+              
+            </motion.div>
+
+              
+            
+
+             
+
+            
+
+            
+          </motion.div>
+
+          {/* Right Content - Image/Visual */}
+         {/* Left Content */}
+          <motion.div
+            className="text-white"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+           
+         
+
+         
 
             <motion.div
               className="flex flex-col sm:flex-row gap-4 mb-12 w-full"
@@ -82,15 +137,16 @@ const HeroSection = () => {
 
               {/* social icons */}
                <motion.div
-              className="grid grid-cols-4 gap-4 sm:gap-4   w-sm mb-8"
+              className="grid grid-cols-5 gap-4 sm:gap-4   w-sm mb-8"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
             >
+             <a href="https://www.youtube.com/@LabourBridgesIndia" target="_blank"><FaYoutube className="h-10 w-10 text-white-400 " /></a> 
              <a href="https://www.facebook.com/profile.php?id=61583904236545" target="_blank"><FaFacebook className="h-10 w-10 text-white-400 " /></a> 
-              <FaWhatsapp className="h-10 w-10 text-white-400 " />
+              <a href="https://wa.me/9363651657" target="_blank"><FaWhatsapp className="h-10 w-10 text-white-400 " /></a>
               <a href="https://www.instagram.com/labour_bridges_india/" target="_blank"><FaInstagram className="h-10 w-10 text-white-400 " /></a>
-              <FaLinkedin className="h-10 w-10 text-white-400 " />
+              <a href="https://www.linkedin.com/company/labourbridges-india/" target="_blank"><FaLinkedin className="h-10 w-10 text-white-400 " /></a>
 
             </motion.div>
 
@@ -112,7 +168,7 @@ const HeroSection = () => {
                   number: "500+",
                   label: "Projects Completed",
                 },
-                { icon: Award, number: "50+", label: "Trusted Clients" },
+                { icon: Award, number: "100+", label: "Trusted Clients" },
               ].map((stat, index) => {
                 const Icon = stat.icon;
                 return (
@@ -131,58 +187,15 @@ const HeroSection = () => {
                     </div>
                     <div className="text-gray-400 text-sm">{stat.label}</div>
                   </motion.div>
-                );
+            );
               })}
-            </motion.div>
-          </motion.div>
-
-          {/* Right Content - Image/Visual */}
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <motion.div
-              className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <img
-                src="/images/construction-workers.jpg"
-                alt="Three professional construction workers in safety gear standing at construction site"
-                className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
-              />
-
-              {/* Floating Cards */}
-              <motion.div
-                className="absolute -top-4 -right-4 bg-yellow-500 text-blue-900 p-4 rounded-xl shadow-lg"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.0 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="text-sm font-semibold">Certified</div>
-                <div className="text-xs">Professional Workers</div>
               </motion.div>
-
-              <motion.div
-                className="absolute -bottom-4 -left-4 bg-white text-blue-900 p-4 rounded-xl shadow-lg"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.2 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="text-sm font-semibold">Safety First</div>
-                <div className="text-xs">100% Compliance</div>
               </motion.div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
+              </div>
+              </div>
+              </section>
+              
+            );
 };
 
 export default HeroSection;

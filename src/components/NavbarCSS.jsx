@@ -32,6 +32,7 @@ const Navbar = () => {
             <img
               src="/logo.jpg"
               alt="LABOURBridge India Logo"
+              loading="lazy"
               className="h-10 sm:h-12 w-auto object-contain drop-shadow-sm hover:drop-shadow-md transition-all duration-300 mr-3"
             />
             <div>
@@ -126,6 +127,7 @@ const Navbar = () => {
                   <img
                     src="/logo.jpg"
                     alt="LABOURBridge India Logo"
+                    loading="lazy"
                     className="h-8 w-auto flex-shrink-0 object-contain drop-shadow-sm mr-3"
                   />
                   <div className="min-w-0">

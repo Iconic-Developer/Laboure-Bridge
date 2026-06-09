@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import SEO from "./SEO";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -61,19 +62,19 @@ const ContactSection = () => {
       address:
         "16th Floor, 69, Pattur Koot Road, Temple, Kundrathur Road, off Mangadu, SriPandian Nagar, Mangadu, Chennai, Tamil Nadu - 600122",
       phone: "+91 40 4567 8902",
-      email: "info@labourbridges.com",
+      email: "aj@labourbridges.com",
     },
     {
       city: "Hyderabad",
       address: "H. NO .124 Flat no 14, Saraswathi Nagar, Lothkunta HYD",
       phone: "+91 40 4567 8901",
-      email: "info@labourbridges.com",
+      email: "aj@labourbridges.com",
     },
     {
       city: "West Bengal",
       address: "WEBEL IT Park, Module 401, 4th Floor, Rajarhat, West Bengal",
       phone: "+91 22 6789 0123",
-      email: "info@labourbridges.com",
+      email: "aj@labourbridges.com",
     },
   ];
 
@@ -92,6 +93,7 @@ const ContactSection = () => {
       className="py-12 sm:py-16 md:py-20 bg-gray-50 w-full overflow-x-hidden"
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SEO title="Contact Labour Bridge - Get in Touch with Us" description="Have questions or want to discuss your workforce needs? Contact Labour Bridge today for personalized solutions and expert support in connecting skilled workers with job opportunities." />
         {/* Header */}
         <motion.div
           className="text-center mb-16"

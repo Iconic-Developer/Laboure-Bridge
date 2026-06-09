@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SEO from "./SEO";
 import {
   MapPin,
   Target,
@@ -43,59 +44,146 @@ const AboutSection = () => {
     {
       name: "Sunil K Nair",
       role: "General Manager - Business Development",
-      image: "sunil.jpg",
+      image: "/about/sunil.jpg",
     },
     {
       name: "Shubajit Bhattacharjee",
       role: "Asst Manager- Site Supervisior (PAN INDIA)",
-      image: "shubajit.jpg",
+      image: "/about/shubajit.jpg",
     },
     {
-      name: "Aniket Sharma",
-      role: "Partner, Resource Planning",
-      image: "aniket.jpg",
-    },
-   
-    {
-      name: "Razina",
-      role: "Partner, Resource Planning",
-      image: "razina.jpg",
-    },
-   
-    {
-      name: "Kiran Shaw",
-      role: "Partner, Resource Planning",
-      image: "kiran.jpg",
+      name: "Raju Paul",
+      role: "Site Supervisior",
+      image: "/about/raju.jpeg",
     },
     {
-      name: "Swastika Sinha",
-      role: "Partner, Resource Planning",
-      image: "swastika.jpg",
+      name: "Puja Sarkar",
+      role: "Asst Manager-Resource & Mobilisation",
+      image: "/about/puja.jpg",
     },
     {
       name: "Debajyoti Chakraborty",
-      role: "Partner, Resource Planning",
-      image: "debajyoti.jpg",
+      role: " Resource Planning",
+      image: "/about/debajyoti.jpg",
     },
     {
-      name: "Jyotirmoy",
-      role: "Partner, Resource Planning",
-      image: "jyotirmoy.jpg",
+      name: "Aniket Sharma",
+      role: " Resource Planning",
+      image: "/about/Aniket.jpeg",
+    }, {
+      name: "Sarit Bhattacharjee",
+      role: " Resource Planning",
+      image: "/about/sarit.jpg",
     },
     {
-      name: "Ramanpreet Kaur",
-      role: "Partner, Resource Planning",
-      image: "ramanpreet.jpg",
+      name: "Anitesh Chakraborty",
+      role: "Software Developer",
+      image: "/about/Ani.jpeg",
+    },
+
+    // interns team from 2026-06-01 to 2026-09-01
+    {
+      name: "Sakshi Shaw",
+      role: "Resource Planning",
+      image: "/about/sakshi.jpeg",
+    },
+     {
+      name: "Bidipto Das",
+      role: "Resource Planning",
+      image: "/about/bidipto.jpeg",
+    },  {
+      name: "Soumili Sarkar",
+      role: "Resource Planning",
+      image: "/about/soumili.jpeg",
+    },
+ {
+      name: "Siddharth Kumar",
+      role: "Resource Planning",
+      image: "/about/siddharth.jpeg",
+    },
+ {
+      name: "Saheli Das",
+      role: "Resource Planning",
+      image: "/about/saheli.jpeg",
+    },{
+      name: "Sneha Kumari Rai",
+      role: "Resource Planning",
+      image: "/about/sneha.jpeg",
+    },{
+      name: "Soni kumari jha",
+      role: "Resource Planning",
+      image: "/about/soni.jpeg",
+    },{
+      name: "Naba Daudi",
+      role: "Resource Planning",
+      image: "/about/naba.jpeg",
+    },{
+      name: "Shruti Tiu",
+      role: "Resource Planning",
+      image: "/about/shruti.jpeg",
+    },
+
+    // interns team from 2026-03-05 to 2026-06-05
+    {
+      name: "Aniket Raj",
+      role: " Resource Planning",
+      image: "/about/Aniket Raj.jpeg",
     },
     {
-      name: "Mahek",
-      role: "Partner, Resource Planning",
-      image: "mahek.jpg",
+      name: "Rahul R Kumar",
+      role: " Resource Planning",
+      image: "/about/Rahul.jpeg",
     },
     {
-      name: "Sreyashi Poddar",
-      role: "Partner, Resource Planning",
-      image: "sreyashi.jpg",
+      name: "Abhijit Dutta",
+      role: " Resource Planning",
+      image: "/about/Abhijit.jpeg",
+    },
+    {
+      name: "Subhranil Roy",
+      role: " Resource Planning",
+      image: "/about/subhranil.jpeg",
+    },
+    {
+      name: "Tamaghno Chakraborty",
+      role: " Resource Planning",
+      image: "/about/tamaghno.jpeg",
+    },
+
+    {
+      name: "Pari Jaiswal",
+      role: " Resource Planning",
+      image: "/about/Pari.jpeg",
+    },
+    {
+      name: "Disha Gupta",
+      role: " Resource Planning",
+      image: "/about/Disha.jpeg",
+    },
+    {
+      name: "Archana jha",
+      role: " Resource Planning",
+      image: "/about/Archana.jpeg",
+    },
+    {
+      name: "Sudipa Biswas",
+      role: " Resource Planning",
+      image: "/about/Sudipa.jpeg",
+    },
+    {
+      name: "Tiyasha Shil",
+      role: " Resource Planning",
+      image: "/about/Tiyasha.jpeg",
+    },
+    {
+      name: "Shristy Agarwal",
+      role: " Resource Planning",
+      image: "/about/shristi.jpeg",
+    },
+    {
+      name: "Anushka Das",
+      role: " Resource Planning",
+      image: "/about/anushka.jpeg",
     },
   ];
 
@@ -141,24 +229,22 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-12 sm:py-16 md:py-20 bg-gray-50 w-full overflow-x-hidden"
-    >
+      className="py-12 sm:py-16 md:py-20 bg-gray-50 w-full overflow-x-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+       
         {/* Company Overview */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
+          viewport={{ once: true }}>
           <motion.h2
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
+            viewport={{ once: true }}>
             About <span className="text-yellow-500">LABOUR BRIDGES India</span>
           </motion.h2>
           <motion.div
@@ -166,8 +252,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+            viewport={{ once: true }}>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
               LABOURBridge India is a leading manpower outsourcing and labor
               supply company in India, offering end-to-end staffing solutions.
@@ -259,7 +344,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {leadership.map((leader, index) => (
               <motion.div
                 key={index}
@@ -267,15 +352,15 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
+                viewport={{ once: true }}>
                 <img
                   src={leader.image}
                   alt={`${leader.name} - ${leader.role}`}
+                  loading="lazy"
                   className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-100 group-hover:border-yellow-300 transition-colors object-cover shadow-md"
                   onError={(e) => {
                     e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
-                      leader.name
+                      leader.name,
                     )}&background=3B82F6&color=fff&size=150`;
                   }}
                 />
@@ -295,8 +380,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true, margin: "-50px" }}
-          >
+            viewport={{ once: true, margin: "-50px" }}>
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Industries We <span className="text-yellow-500">Serve</span>
             </h3>
@@ -320,8 +404,7 @@ const AboutSection = () => {
                     delay: index * 0.1,
                     ease: "easeOut",
                   }}
-                  viewport={{ once: true, margin: "-100px" }}
-                >
+                  viewport={{ once: true, margin: "-100px" }}>
                   <div className="flex flex-col md:flex-row items-start gap-6">
                     <div className="flex-shrink-0">
                       <motion.div
@@ -333,8 +416,7 @@ const AboutSection = () => {
                           delay: index * 0.1 + 0.2,
                           ease: "easeOut",
                         }}
-                        viewport={{ once: true }}
-                      >
+                        viewport={{ once: true }}>
                         <Icon className="h-10 w-10 text-black" />
                       </motion.div>
                     </div>
@@ -348,8 +430,7 @@ const AboutSection = () => {
                           delay: index * 0.1 + 0.3,
                           ease: "easeOut",
                         }}
-                        viewport={{ once: true }}
-                      >
+                        viewport={{ once: true }}>
                         {industry.title}
                       </motion.h4>
                       <motion.p
@@ -361,8 +442,7 @@ const AboutSection = () => {
                           delay: index * 0.1 + 0.4,
                           ease: "easeOut",
                         }}
-                        viewport={{ once: true }}
-                      >
+                        viewport={{ once: true }}>
                         {industry.description}
                       </motion.p>
                     </div>
