@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/NavbarCSS';
 import AboutSection from '../components/AboutSection';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const AboutPage = () => {
   return (
