@@ -609,6 +609,71 @@ const mundraNMRProjects = [
     },     
               
   ];
+  
+  const google = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Hyderabad",
+      image: "/google/google1.jpeg",
+      status: "Active",
+    },    
+        {
+      id: 2,
+      title: "Construction site",
+      location: "Hyderabad",
+      image: "/google/google2.jpeg",
+      status: "Active",
+    },    
+          
+          {
+      id: 3,
+      title: "Site Labour Camp",
+      location: "Hyderabad",
+      image: "/google/google3.jpg",
+      status: "Active",
+    },   
+       {
+      id: 4,
+      title: "Site Labour Camp",
+      location: "Hyderabad",
+      image: "/google/google4.jpg",
+      status: "Active",
+    },    
+           
+              
+  ];
+  
+  
+  const chennaiIt = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai it/chennai it1.jpeg",
+      status: "Active",
+    }, {
+      id: 2,
+      title: "Construction site",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai it/chennai it2.jpeg",
+      status: "Active",
+    }, {
+      id: 3,
+      title: "Labour Camp",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai it/chennai it3.jpeg",
+      status: "Active",
+    }, {
+      id: 4,
+      title: "Labour Camp",
+      location: "Chennai, Tamil Nadu",
+      image: "/chennai it/chennai it4.jpeg",
+      status: "Active",
+    },    
+           
+              
+  ];
   return (
     <section
       id="ongoing-projects"
@@ -1485,9 +1550,117 @@ const mundraNMRProjects = [
 
 
 
-          {/* mundra Projects Grid */}
+          {/* cyber city Projects Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {cyberCityProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        
+        
+        {/*google Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Google Project (Hyderabad)</span> Sites
+              Location 
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Hyderabad</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* cyber city Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {google.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Gurgaon+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        
+        
+        {/*chennai it Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">IT Park (Chennai)</span> Sites
+              Location 
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Chennai, Tamil Nadu</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* it park Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {chennaiIt.map((project, index) => (
               <div
                 key={project.id}
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
