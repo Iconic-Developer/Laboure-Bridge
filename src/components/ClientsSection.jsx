@@ -167,14 +167,7 @@ const ClientsSection = () => {
       name: "TATA Projects",
       logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
     },
-    // {
-    //   name: "Vijay Nirman",
-    //   logo: "https://vijaynirman.com/wp-content/uploads/2015/06/VNC_logo.jpg",
-    // },
-    {
-      name: "Google",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Google_logo_%282013-2015%29.svg",
-    },
+  
     {
       name: "ADANI Group",
       logo: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Adani_logo_2012.svg",
@@ -232,7 +225,7 @@ const ClientsSection = () => {
 
     {
       name: "PISL",
-      logo: "https://pislinfra.com/wp-content/uploads/2023/08/pisl-logo-1.png",
+      logo: "https://www.pragatiinfra.in/assets/logo.png",
     },
     {
       name: "Robomatic Precon pvt Ltd",
@@ -287,10 +280,7 @@ const ClientsSection = () => {
       name: "Balajee Group",
       logo: "https://balajeegroup.com/wp-content/uploads/2023/10/Balajee-logo.png",
     },
-    {
-      name: "Hariharan Group",
-      logo: "https://hariharansteels.com/Images/logo.png",
-    },
+   
     {
       name: "Saint Gobain",
       logo: "https://upload.wikimedia.org/wikipedia/en/d/dc/Saint-Gobain_logo.svg",
