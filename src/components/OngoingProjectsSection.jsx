@@ -858,6 +858,36 @@ const mundraNMRProjects = [
            
               
   ];
+  
+  const panchkhula = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Panchkhula, Haryana",
+      image: "/panchkhula/panchkhula1.jpeg",
+      status: "Active",
+    }, {
+      id: 2,
+      title: "Construction site",
+      location: "Panchkhula, Haryana",
+      image: "/panchkhula/panchkhula2.jpeg",
+      status: "Active",
+    }, {
+      id: 1,
+      title: "Labour Camp",
+      location: "Panchkhula, Haryana",
+      image: "/panchkhula/labour camp1.jpeg",
+      status: "Active",
+    }, {
+      id: 1,
+      title: "Construction site",
+      location: "Panchkhula, Haryana",
+      image: "/panchkhula/labour camp2.jpeg",
+      status: "Active",
+    },   
+           
+              
+  ];
   return (
     <section
       id="ongoing-projects"
@@ -2179,6 +2209,60 @@ const mundraNMRProjects = [
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
                       e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Kalamboli+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+
+  {/*panchkhula Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Panchkhula (Haryana)</span> Sites
+              Location (Supply)
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Panchkhula, Haryana</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* kalamboli Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {panchkhula.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Panchkhula+Site+${project.id}`;
                     }}
                   />
                   <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
