@@ -1966,10 +1966,12 @@ const mundraNMRProjects = [
          {/*pune Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Pune (Maharashtra)</span> Sites
-              Location 
-            </h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-5">
+              On Going Work On Different Sites Location
+              <span className="text-yellow-500"> March 2026</span> 
+               
+            </h3>  
+           
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
@@ -2020,10 +2022,11 @@ const mundraNMRProjects = [
         {/*gurugram Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Gurugram (Haryana)</span> Sites
-              Location 
-            </h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-5">
+              On Going Work On Different Sites Location
+              <span className="text-yellow-500"> April 2026</span> 
+               
+            </h3> 
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
@@ -2073,10 +2076,11 @@ const mundraNMRProjects = [
          {/*mahalaxmi Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Mahalaxmi (Mumbai)</span> Sites
-              Location 
-            </h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-5">
+              On Going Work On Different Sites Location
+              <span className="text-yellow-500"> June 2026</span> 
+               
+            </h3> 
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
@@ -2127,10 +2131,11 @@ const mundraNMRProjects = [
         {/*perambur Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-yellow-500">Perambur (Chennai)</span> Sites
-              Location 
-            </h3>
+             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-5">
+              On Going Work On Different Sites Location
+              <span className="text-yellow-500"> July 2026</span> 
+               
+            </h3> 
             <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2 text-yellow-500" />

@@ -221,6 +221,10 @@ const ClientsSection = () => {
       name: "IPS Group",
       logo: "https://www.integratedpersonnelservices.com/wp-content/uploads/2022/09/Logo-1.jpg",
     },
+    {
+      name: "Regal India",
+      logo: "https://regalindia.in/wp-content/uploads/2026/04/Logo-1536x411.png",
+    }, 
     
 
     {
@@ -288,7 +292,10 @@ const ClientsSection = () => {
       name: "Saint Gobain",
       logo: "data:image/jpeg;base64,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",
     }, 
-    
+    {
+      name: "Afcon",
+      logo: "https://afcons.com/wp-content/uploads/2026/01/Afcons-Logo-Rounded.png",
+    },   
   ];
   
   const clients2 = [
@@ -350,6 +357,11 @@ const ClientsSection = () => {
       name: "Priya Construction",
       logo: "https://www.priyacons.in/jb-content/uploads/2022/12/priya-logo-copy-2048x1478.png",
     },
+     {
+        name: "Pranjal Projects",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2CauDb9bq8Qv8qIxlM2ZR4nI9sGRZIlDOX_GvfbMP5w&s=10",
+      },
+      
     
     // {
       //   name: "CS Infra",
@@ -377,7 +389,7 @@ const ClientsSection = () => {
         logo: "https://kanwarenterprises.com/wp-content/uploads/2026/02/kepl-logo.png",
       },
       
-      
+    
       {
         name: "G R Infraprojects Limited",
         logo: "https://www.developmentaid.org/files/organizationLogos/g-r-infraprojects-limited-504422.jpg",
@@ -398,6 +410,11 @@ const ClientsSection = () => {
         name: "Vivedha Construction",
         logo: "https://vidvedaa.com/assets/images/vidvedaa-logo-bg.jpg",
       },
+        {
+        name: "Amara Raja Batteries",
+        logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGN6WeIFfsang/company-logo_200_200/company-logo_200_200/0/1672753646757/amararaja_logo?e=2147483647&v=beta&t=NK9UA1mWW5Em-9u9yjw6j-4ikS7sVcRkC0pTPVcHBJA",
+      },
+     
       
   ];
 
