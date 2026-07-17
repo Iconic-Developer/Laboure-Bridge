@@ -386,7 +386,7 @@ const ClientsSection = () => {
       
       {
         name: "Kanwar Enterprises Pvt Ltd",
-        logo: "https://kanwarenterprises.com/wp-content/uploads/2026/02/kepl-logo.png",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYN5KfXED4TpcpwJhiyZ-lNVuQ50VmZzDmY8zI1ksD52f80UQwTxw9prQ&s=10",
       },
       
     
