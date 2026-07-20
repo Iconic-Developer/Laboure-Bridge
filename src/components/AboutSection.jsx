@@ -55,6 +55,11 @@ const AboutSection = () => {
       name: "Raju Paul",
       role: "Site Supervisior",
       image: "/about/raju.jpeg",
+    }, 
+    {
+      name: "Swapan Baruai",
+      role: "Site Supervisior",
+      image: "/about/swapan.jpeg",
     },
     {
       name: "Puja Sarkar",
