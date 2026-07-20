@@ -122,6 +122,11 @@ const AboutSection = () => {
       role: "Resource Planning",
       image: "/about/shruti.jpeg",
     },
+    {
+      name: "Sumana Manna",
+      role: "Resource Planning",
+      image: "/about/sumana.jpeg",
+    },
 
     // interns team from 2026-03-05 to 2026-06-05
     {
