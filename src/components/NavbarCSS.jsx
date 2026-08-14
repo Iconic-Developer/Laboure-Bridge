@@ -14,6 +14,7 @@ const Navbar = () => {
     { name: "Projects", href: "/projects", type: "route" },
     { name: "Milestones", href: "/milestones", type: "route" },
     { name: "Contact Us", href: "/contact", type: "route" },
+    { name: "Careers", href: "/careers", type: "route" },
   ];
 
   const toggleMenu = () => {
