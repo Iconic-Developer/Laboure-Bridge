@@ -204,7 +204,7 @@ function Careers() {
               className="career-btn outline"
               onClick={() => {
                 window.open(
-                  "https://mail.google.com/mail/?view=cm&fs=1&to=hrd@labourbridges.com&su=Job%20Application",
+                  "https://mail.google.com/mail/?view=cm&fs=1&to=aj@labourbridges.com&su=Job%20Application",
                   "_blank",
                 );
               }}>
