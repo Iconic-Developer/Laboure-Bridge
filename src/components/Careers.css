@@ -144,7 +144,7 @@
 
   max-width: 720px;
   color: #fff;
-  text-align: left;
+  text-align: left !important;
 }
 
 .hero-tag {
