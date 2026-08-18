@@ -354,7 +354,7 @@ export default function Workforce() {
       <section className="quote-banner">
         <div className="container quote-banner-inner">
 
-          <div>
+          <div className="p-2">
             <span className="section-label">
               BUILT BY PEOPLE
             </span>
