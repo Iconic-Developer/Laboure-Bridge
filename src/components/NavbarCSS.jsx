@@ -13,8 +13,9 @@ const Navbar = () => {
     { name: "Clients", href: "/#clients", type: "hash" },
     { name: "Projects", href: "/projects", type: "route" },
     { name: "Milestones", href: "/milestones", type: "route" },
-    { name: "Contact Us", href: "/contact", type: "route" },
+    { name: "Workforce", href: "/workforce", type: "route" },
     { name: "Careers", href: "/careers", type: "route" },
+    { name: "Contact Us", href: "/contact", type: "route" },
   ];
 
   const toggleMenu = () => {

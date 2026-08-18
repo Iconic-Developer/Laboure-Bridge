@@ -144,12 +144,14 @@
 
   max-width: 720px;
   color: #fff;
+  text-align: left;
 }
 
 .hero-tag {
   display: inline-flex;
   align-items: center;
   gap: 9px;
+
 
   padding: 7px 13px;
 

@@ -213,10 +213,10 @@ const ClientsSection = () => {
       name: "Hindustan Construction",
       logo: "https://constrofacilitator.com/wp-content/uploads/2024/04/HCC-jpg.webp",
     },
-    {
-      name: "ITD CEM",
-      logo: "https://allpaisa.com/wp-content/uploads/2021/05/ITD-LOGO.jpg",
-    },
+    // {
+    //   name: "ITD CEM",
+    //   logo: "https://allpaisa.com/wp-content/uploads/2021/05/ITD-LOGO.jpg",
+    // },
      {
       name: "IPS Group",
       logo: "https://www.integratedpersonnelservices.com/wp-content/uploads/2022/09/Logo-1.jpg",
@@ -549,3 +549,5 @@ const ClientsSection = () => {
 };
 
 export default ClientsSection;
+
+

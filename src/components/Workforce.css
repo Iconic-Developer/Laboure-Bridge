@@ -1,0 +1,589 @@
+.workforce-page {
+  background: #ffffff;
+  color: #10213a;
+  overflow: hidden;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.workforce-hero {
+  min-height: 590px;
+  position: relative;
+
+  background-image: url("/workforce/hero.png");
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 18, 35, 0.288),
+      rgba(5, 18, 35, 0.292),
+      rgba(5, 18, 35, 0.378)
+    );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+.hero-small {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #ff8a00;
+  margin-bottom: 18px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: clamp(50px, 7vw, 92px);
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #ff8a00;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hero-line {
+  width: 70px;
+  height: 4px;
+  background: #ff8a00;
+  margin: 28px auto;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.workforce-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding: 100px 0 70px;
+  align-items: center;
+}
+
+.section-label {
+  color: #ff8500;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-label::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 3px;
+  background: #ff8500;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.intro-text h2,
+.gallery-header h2 {
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin: 18px 0;
+}
+
+.intro-text p {
+  max-width: 540px;
+  color: #647083;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.quote-card {
+  background: #fff9f2;
+  border: 1px solid #f3e5d4;
+  border-radius: 18px;
+  padding: 55px;
+  position: relative;
+  text-align: center;
+}
+
+.quote-mark {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  font-size: 80px;
+  color: #ff8a00;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.quote-card blockquote {
+  margin: 15px 0 25px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.55;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.quote-card span {
+  color: #ff8500;
+  font-weight: 700;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 27px 22px;
+
+  background: #fff;
+  border: 1px solid #e8ebef;
+  border-radius: 13px;
+
+  box-shadow: 0 8px 30px rgba(15, 32, 52, 0.06);
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #fff5e9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 26px;
+}
+
+.stat-card span {
+  display: block;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.stat-card small {
+  display: block;
+  margin-top: 4px;
+  color: #7c8795;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section {
+  padding-bottom: 110px;
+}
+
+.gallery-header {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.gallery-header h2 {
+  margin-bottom: 12px;
+}
+
+.gallery-header p {
+  color: #697586;
+  line-height: 1.7;
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 45px 0 30px;
+}
+
+.gallery-filters button {
+  border: 1px solid #e1e5ea;
+  background: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+
+  color: #24334a;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.gallery-filters button:hover,
+.gallery-filters button.active {
+  background: #ff8500;
+  border-color: #ff8500;
+  color: white;
+}
+
+/* =========================
+   MASONRY GRID
+========================= */
+
+.gallery-grid {
+  columns: 4 260px;
+  column-gap: 14px;
+}
+
+.gallery-item {
+  position: relative;
+  margin-bottom: 14px;
+  break-inside: avoid;
+
+  border-radius: 8px;
+  overflow: hidden;
+
+  cursor: pointer;
+  background: #eee;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+  filter: brightness(0.65);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+
+  padding: 45px 18px 18px;
+
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.82)
+  );
+
+  color: white;
+
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay p {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.gallery-overlay span {
+  color: #ff9a25;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   QUOTE BANNER
+========================= */
+
+.quote-banner {
+  background:
+    linear-gradient(
+      90deg,
+      #071a31,
+      #102d4d
+    );
+
+  color: white;
+  padding: 85px 0;
+  overflow: hidden;
+}
+
+.quote-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.quote-banner h2 {
+  font-size: clamp(35px, 4vw, 52px);
+  line-height: 1.1;
+  margin: 20px 0 0;
+}
+
+.quote-banner p {
+  max-width: 430px;
+  color: #c8d2df;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.workforce-cta {
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      100deg,
+      #071a31,
+      #102e4d
+    );
+
+  color: white;
+
+  overflow: hidden;
+}
+
+.cta-content {
+  padding: 70px;
+  position: relative;
+}
+
+.cta-content h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.cta-content p {
+  max-width: 620px;
+  color: #c5d0dc;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 25px;
+  padding: 15px 24px;
+
+  background: #ff8500;
+  color: white;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  background: #ff971f;
+}
+
+.cta-button span {
+  font-size: 20px;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+
+  background: rgba(3, 12, 22, 0.94);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 82vh;
+  object-fit: contain;
+
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+
+  width: 45px;
+  height: 45px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: white;
+  color: #10213a;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 25px;
+
+  color: white;
+  text-align: center;
+
+  font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .workforce-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quote-banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .workforce-hero {
+    min-height: 500px;
+  }
+
+  .hero-content h1 {
+    letter-spacing: -2px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .workforce-intro {
+    padding-top: 65px;
+  }
+
+  .quote-card {
+    padding: 45px 25px;
+  }
+
+  .quote-card blockquote {
+    font-size: 19px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr;
+    padding-bottom: 65px;
+  }
+
+  .gallery-section {
+    padding-bottom: 65px;
+  }
+
+  .gallery-grid {
+    columns: 2 150px;
+    column-gap: 8px;
+  }
+
+  .gallery-item {
+    margin-bottom: 8px;
+  }
+
+  .gallery-overlay {
+    padding: 25px 10px 10px;
+  }
+
+  .gallery-overlay p {
+    font-size: 12px;
+  }
+
+  .quote-banner {
+    padding: 60px 0;
+  }
+
+  .cta-content {
+    padding: 45px 25px;
+  }
+
+  .cta-content h2 {
+    font-size: 32px;
+  }
+
+  .lightbox img {
+    max-width: 96%;
+  }
+
+}
