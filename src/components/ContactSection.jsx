@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  Send,
+  CheckCircle,
+  AlertCircle,
+} from "lucide-react";
 import SEO from "./SEO";
 
 const ContactSection = () => {
+  const form = useRef();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,48 +24,20 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState({
+    type: "",
+    message: "",
+  });
 
-    // Check if required fields are filled
-    if (
-      !formData.name.trim() ||
-      !formData.email.trim() ||
-      !formData.message.trim()
-    ) {
-      alert("Please fill in all required fields (Name, Email, and Message).");
-      return;
-    }
-
-    // Log form data for debugging (optional)
-    console.log("Form submitted:", formData);
-
-    // Redirect to Google Form
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSfzI0iXQ0yuCXUb3890JueFgYAEo6M-uDU6E3LZiUF2lDABcg/viewform?usp=publish-editor",
-      "_blank"
-    );
-
-    // Optional: Reset form after submission
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      service: "",
-      message: "",
-    });
-
-    // Optional: Show success message
-    alert("Thank you! You will be redirected to complete your submission.");
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const services = [
+    "Skilled Manpower Supply",
+    "Unskilled Manpower Supply",
+    "Project-Based Staffing",
+    "Turnkey Workforce Solutions",
+    "NMR and Contract Labour",
+    "Other",
+  ];
 
   const offices = [
     {
@@ -72,20 +55,91 @@ const ContactSection = () => {
     },
     {
       city: "West Bengal",
-      address: "WEBEL IT Park, Module 401, 4th Floor, Rajarhat, West Bengal",
-      phone: "+91 22 6789 0123",
+      address:
+        "Action Area IIE, New Town, Kolkata, West Bengal - 700161",
+      phone: "+91 93636 51657",
       email: "aj@labourbridges.com",
     },
   ];
 
-  const services = [
-    "Skilled Manpower Supply",
-    "Unskilled Manpower Supply",
-    "Project-Based Staffing",
-    "Turnkey Workforce Solutions",
-    "NMR and Contract Labour",
-    "Other",
-  ];
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    // Remove status message while user edits
+    if (status.message) {
+      setStatus({
+        type: "",
+        message: "",
+      });
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Basic validation
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.message.trim()
+    ) {
+      setStatus({
+        type: "error",
+        message: "Please fill in Name, Email and Message.",
+      });
+
+      return;
+    }
+
+    setIsSending(true);
+
+    setStatus({
+      type: "",
+      message: "",
+    });
+
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      );
+
+      setStatus({
+        type: "success",
+        message:
+          "Thank you! Your message has been sent successfully. We will contact you soon.",
+      });
+
+      // Clear form
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        service: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+
+      setStatus({
+        type: "error",
+        message:
+          "Sorry, we couldn't send your message. Please try again later.",
+      });
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <section
@@ -93,7 +147,11 @@ const ContactSection = () => {
       className="py-12 sm:py-16 md:py-20 bg-gray-50 w-full overflow-x-hidden"
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SEO title="Contact Labour Bridge - Get in Touch with Us" description="Have questions or want to discuss your workforce needs? Contact Labour Bridge today for personalized solutions and expert support in connecting skilled workers with job opportunities." />
+        <SEO
+          title="Contact Labour Bridges India - Get in Touch with Us"
+          description="Have questions or want to discuss your workforce needs? Contact Labour Bridges India today for personalized workforce solutions and expert support."
+        />
+
         {/* Header */}
         <motion.div
           className="text-center mb-16"
@@ -111,6 +169,7 @@ const ContactSection = () => {
           >
             Get in <span className="text-yellow-500">Touch</span>
           </motion.h2>
+
           <motion.p
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
@@ -118,8 +177,9 @@ const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Ready to discuss your workforce requirements? Contact us today for a
-            customized solution that meets your specific needs and timeline.
+            Ready to discuss your workforce requirements? Contact us today
+            for a customized solution that meets your specific needs and
+            timeline.
           </motion.p>
         </motion.div>
 
@@ -136,7 +196,12 @@ const ContactSection = () => {
               Send us a Message
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              ref={form}
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              {/* Name + Email */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -145,6 +210,7 @@ const ContactSection = () => {
                   >
                     Full Name *
                   </label>
+
                   <input
                     type="text"
                     id="name"
@@ -164,6 +230,7 @@ const ContactSection = () => {
                   >
                     Email Address *
                   </label>
+
                   <input
                     type="email"
                     id="email"
@@ -177,6 +244,7 @@ const ContactSection = () => {
                 </div>
               </div>
 
+              {/* Company + Phone */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -185,6 +253,7 @@ const ContactSection = () => {
                   >
                     Company Name
                   </label>
+
                   <input
                     type="text"
                     id="company"
@@ -203,6 +272,7 @@ const ContactSection = () => {
                   >
                     Phone Number
                   </label>
+
                   <input
                     type="tel"
                     id="phone"
@@ -215,6 +285,7 @@ const ContactSection = () => {
                 </div>
               </div>
 
+              {/* Service */}
               <div>
                 <label
                   htmlFor="service"
@@ -222,6 +293,7 @@ const ContactSection = () => {
                 >
                   Service Required
                 </label>
+
                 <select
                   id="service"
                   name="service"
@@ -230,14 +302,16 @@ const ContactSection = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Select a service</option>
-                  {services.map((service, index) => (
-                    <option key={index} value={service}>
+
+                  {services.map((service) => (
+                    <option key={service} value={service}>
                       {service}
                     </option>
                   ))}
                 </select>
               </div>
 
+              {/* Message */}
               <div>
                 <label
                   htmlFor="message"
@@ -245,11 +319,12 @@ const ContactSection = () => {
                 >
                   Message *
                 </label>
+
                 <textarea
                   id="message"
                   name="message"
                   required
-                  rows={4}
+                  rows={12}
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
@@ -257,12 +332,46 @@ const ContactSection = () => {
                 />
               </div>
 
+              {/* Status Message */}
+              {status.message && (
+                <div
+                  className={`flex items-start gap-3 p-4 rounded-lg ${
+                    status.type === "success"
+                      ? "bg-green-50 text-green-700 border border-green-200"
+                      : "bg-red-50 text-red-700 border border-red-200"
+                  }`}
+                >
+                  {status.type === "success" ? (
+                    <CheckCircle className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                  ) : (
+                    <AlertCircle className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                  )}
+
+                  <p className="text-sm">{status.message}</p>
+                </div>
+              )}
+
+              {/* Submit */}
               <button
                 type="submit"
-                className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center group"
+                disabled={isSending}
+                className={`w-full text-black font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center group ${
+                  isSending
+                    ? "bg-yellow-300 cursor-not-allowed"
+                    : "bg-yellow-500 hover:bg-yellow-600"
+                }`}
               >
-                Send Message
-                <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                {isSending ? (
+                  <>
+                    <span className="mr-3 h-5 w-5 border-2 border-black border-t-transparent rounded-full animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Send Message
+                    <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </>
+                )}
               </button>
             </form>
           </motion.div>
@@ -286,9 +395,14 @@ const ContactSection = () => {
                   <div className="bg-blue-100 p-3 rounded-xl">
                     <Mail className="h-6 w-6 text-blue-600" />
                   </div>
+
                   <div className="ml-4">
-                    <div className="font-semibold text-gray-900">Email</div>
-                    <div className="text-gray-600">info@labourbridges.com</div>
+                    <div className="font-semibold text-gray-900">
+                      Email
+                    </div>
+                    <div className="text-gray-600">
+                      aj@labourbridges.com
+                    </div>
                   </div>
                 </div>
 
@@ -296,9 +410,14 @@ const ContactSection = () => {
                   <div className="bg-green-100 p-3 rounded-xl">
                     <Phone className="h-6 w-6 text-green-600" />
                   </div>
+
                   <div className="ml-4">
-                    <div className="font-semibold text-gray-900">Phone</div>
-                    <div className="text-gray-600">+91 40 4567 8902</div>
+                    <div className="font-semibold text-gray-900">
+                      Phone
+                    </div>
+                    <div className="text-gray-600">
+                      +91 93636 51657
+                    </div>
                   </div>
                 </div>
 
@@ -306,12 +425,14 @@ const ContactSection = () => {
                   <div className="bg-yellow-100 p-3 rounded-xl">
                     <Clock className="h-6 w-6 text-yellow-600" />
                   </div>
+
                   <div className="ml-4">
                     <div className="font-semibold text-gray-900">
                       Business Hours
                     </div>
+
                     <div className="text-gray-600">
-                      Mon - Sat : 9:00 AM - 6:30 PM
+                      Mon - Sat : 9:00 AM - 5:00 PM
                     </div>
                   </div>
                 </div>
@@ -324,24 +445,27 @@ const ContactSection = () => {
                 Our Offices
               </h3>
 
-              <div className="space-y-6 max-h-96 overflow-y-auto">
-                {offices.map((office, index) => (
+              <div className="space-y-6 ">
+                {offices.map((office) => (
                   <div
-                    key={index}
+                    key={office.city}
                     className="border-b border-gray-100 pb-4 last:border-b-0"
                   >
                     <h4 className="font-semibold text-gray-900 mb-2">
                       {office.city}
                     </h4>
+
                     <div className="text-sm text-gray-600 space-y-1">
                       <div className="flex items-start">
                         <MapPin className="h-4 w-4 text-gray-400 mt-0.5 mr-2 flex-shrink-0" />
-                        <span>{office.address}</span>
+                        <span className="mb-2">{office.address}</span>
                       </div>
+
                       <div className="flex items-center">
                         <Phone className="h-4 w-4 text-gray-400 mr-2" />
-                        <span>{office.phone}</span>
+                        <span className="mb-2">{office.phone}</span>
                       </div>
+
                       <div className="flex items-center">
                         <Mail className="h-4 w-4 text-gray-400 mr-2" />
                         <span>{office.email}</span>
