@@ -4,68 +4,74 @@ import "./Celebration.css";
 const celebrations = [
   {
     id: 1,
-    image: "/images/celebrations/team-1.jpg",
-    category: "Team",
+    type: "image",
+    image: "/celebration/christmas_1_2025.jpeg",
+    category: "Christmas",
     title: "Together We Celebrate",
     description: "Building stronger teams beyond the workplace.",
   },
-  {
+    {
     id: 2,
-    image: "/images/celebrations/festival-1.jpg",
-    category: "Occasions",
-    title: "Festival Celebrations",
-    description: "Celebrating traditions and creating memories together.",
+    type: "image",
+    image: "/celebration/christmas_2_2025.jpeg",
+    category: "Christmas",
+    title: "Festive Team Spirit",
+    description: "Spreading happiness and creating memorable moments together.",
   },
-  {
+    {
     id: 3,
-    image: "/images/celebrations/birthday-1.jpg",
-    category: "Birthdays",
-    title: "Birthday Moments",
-    description: "A little celebration for our amazing team members.",
-  },
-  {
+    type: "image",
+    image: "/celebration/christmas_3_2025.jpeg",
+    category: "Christmas",
+    title: "A Season to Remember",
+    description: "Bringing our team closer through celebration and cheer.",
+  },   {
     id: 4,
-    image: "/images/celebrations/team-2.jpg",
-    category: "Team",
-    title: "Team Moments",
-    description: "Great people make great teams.",
-  },
-  {
+    type: "image",
+    image: "/celebration/christmas_4_2025.jpeg",
+    category: "Christmas",
+    title: "A Season to Remember",
+    description: "Bringing our team closer through celebration and cheer.",
+  },   {
     id: 5,
-    image: "/images/celebrations/site-1.jpg",
-    category: "Workforce",
-    title: "Our Workforce in Action",
-    description: "Celebrating the people behind every successful project.",
+    type: "image",
+    image: "/celebration/christmas_5_2025.jpeg",
+    category: "Christmas",
+    title: "A Season to Remember",
+    description: "Bringing our team closer through celebration and cheer.",
   },
-  {
+   {
     id: 6,
-    image: "/images/celebrations/festival-2.jpg",
-    category: "Occasions",
-    title: "Special Occasions",
-    description: "Moments that bring us closer together.",
+    type: "image",
+    image: "/celebration/holi_2026.jpeg",
+    category: "Holi",
+    title: "Colors of Togetherness",
+    description: "Celebrating the vibrant spirit of Holi with our team.",
   },
-  {
+    {
     id: 7,
-    image: "/images/celebrations/achievement-1.jpg",
-    category: "Achievements",
-    title: "Celebrating Success",
-    description: "Recognising hard work, dedication and achievement.",
-  },
+    type: "image",
+    image: "/celebration/holi_2_2026.jpeg",
+    category: "Holi",
+    title: "Holi & Happiness",
+    description: "Adding colors, laughter, and joyful memories to our workplace.",
+  }, 
   {
     id: 8,
-    image: "/images/celebrations/team-3.jpg",
-    category: "Team",
-    title: "Making Memories",
-    description: "Because every journey is better together.",
+    type: "video",
+    image: "/celebration/jyotirmoy_birthday.mp4",
+    category: "Birthday",
+    title: "Birthday Bash",
+    description: "Adding colors, laughter, and joyful memories to our workplace.",
   },
+  
 ];
 
 const categories = [
   "All",
-  "Team",
-  "Occasions",
-  "Birthdays",
-  "Workforce",
+  "Christmas",
+  "Holi",
+  "Birthday",
   "Achievements",
 ];
 
@@ -123,38 +129,48 @@ export default function Celebrations() {
         {/* Gallery */}
         <div className="celebration-grid">
 
-          {filteredPhotos.map((item) => (
-            <div
-              className="celebration-card"
-              key={item.id}
-            >
+  {filteredPhotos.map((item) => (
+    <div
+      className="celebration-card"
+      key={item.id}
+    >
 
-              <img
-                src={item.image}
-                alt={item.title}
-                loading="lazy"
-              />
+      {item.type === "video" ? (
+        <video
+          src={item.image}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      ) : (
+        <img
+          src={item.image}
+          alt={item.title}
+          loading="lazy"
+        />
+      )}
 
-              <div className="celebration-overlay">
+      <div className="celebration-overlay">
 
-                <div className="instagram-icon">
-                  ◎
-                </div>
-
-                <div className="celebration-content">
-                  <span>{item.category}</span>
-
-                  <h3>{item.title}</h3>
-
-                  <p>{item.description}</p>
-                </div>
-
-              </div>
-
-            </div>
-          ))}
-
+        <div className="instagram-icon">
+          ◎
         </div>
+
+        <div className="celebration-content">
+          <span>{item.category}</span>
+
+          <h3>{item.title}</h3>
+
+          <p>{item.description}</p>
+        </div>
+
+      </div>
+
+    </div>
+  ))}
+
+</div>
 
         {/* Instagram Button */}
         <div className="instagram-button-wrapper">
