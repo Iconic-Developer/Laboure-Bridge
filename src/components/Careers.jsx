@@ -4,6 +4,7 @@ import "./Careers.css";
 import Navbar from "./NavbarCSS";
 import Footer from "./Footer";
 import { div } from "framer-motion/client";
+import Celebration from "../components/Celebration";
 
 const jobs = [
   {
@@ -343,6 +344,8 @@ function Careers() {
           </div>
         </div>
       </section>
+            {/* celebration section */}
+            <Celebration />
 
       {/* ================= CTA ================= */}
 

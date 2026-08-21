@@ -171,7 +171,86 @@ const gallery = [
     category: "skilled",
     caption: "Expertise in every connection.",
   },
- 
+ {
+  image: "/workforce/team_35.jpeg",
+  category: "skilled",
+  caption: "Strength built through skill.",
+},
+{
+  image: "/workforce/team_36.jpeg",
+  category: "skilled",
+  caption: "Skilled hands, reliable results.",
+},
+{
+  image: "/workforce/team_37.jpeg",
+  category: "skilled",
+  caption: "Precision that makes a difference.",
+},
+{
+  image: "/workforce/team_38.jpeg",
+  category: "skilled",
+  caption: "Committed to quality work.",
+},
+{
+  image: "/workforce/team_39.jpeg",
+  category: "skilled",
+  caption: "Experience you can rely on.",
+},
+{
+  image: "/workforce/team_40.jpeg",
+  category: "skilled",
+  caption: "Building with confidence and care.",
+},
+{
+  image: "/workforce/team_41.jpeg",
+  category: "skilled",
+  caption: "Professionalism in every task.",
+},
+{
+  image: "/workforce/team_42.jpeg",
+  category: "skilled",
+  caption: "Skill that drives progress.",
+},
+{
+  image: "/workforce/team_43.jpeg",
+  category: "skilled",
+  caption: "Dedicated people, dependable work.",
+},
+{
+  image: "/workforce/team_44.jpeg",
+  category: "skilled",
+  caption: "Turning expertise into excellence.",
+},
+{
+  image: "/workforce/team_45.jpeg",
+  category: "skilled",
+  caption: "Quality begins with skilled hands.",
+},
+{
+  image: "/workforce/team_46.jpeg",
+  category: "skilled",
+  caption: "Work powered by experience.",
+},
+{
+  image: "/workforce/team_47.jpeg",
+  category: "skilled",
+  caption: "Reliable skills. Strong results.",
+},
+{
+  image: "/workforce/team_48.jpeg",
+  category: "skilled",
+  caption: "Every task deserves the right expertise.",
+},
+{
+  image: "/workforce/team_49.jpeg",
+  category: "skilled",
+  caption: "Working together with purpose.",
+},
+{
+  image: "/workforce/team_50.jpeg",
+  category: "skilled",
+  caption: "Where skill meets dedication.",
+},
   
 ];
 
