@@ -47,6 +47,38 @@ const jobs = [
     femaleOnly: true,
     maleOnly: false,
   },
+  {
+  img: "/career/content_writer.jpeg",
+  title: "Content Writer",
+  icon: "✍️",
+  description:
+    "Create engaging website, social media and marketing content while maintaining a consistent brand voice and clear communication.",
+  tags: ["Full Time", "Content Writing", "Marketing"],
+  femaleOnly: false,
+  maleOnly: false,
+},
+
+{
+  img: "/career/marketing_manager.jpeg",
+  title: "Asst. Marketing Manager",
+  icon: "📈",
+  description:
+    "Support marketing campaigns, brand promotion, social media activities and client engagement while helping drive business growth.",
+  tags: ["Full Time", "Marketing", "Management"],
+  femaleOnly: false,
+  maleOnly: false,
+},
+
+{
+  img: "/career/model.jpeg",
+  title: "Female Presenter",
+  icon: "🎤",
+  description:
+    "Represent the company in videos, presentations and promotional content with confidence, professionalism and strong communication skills.",
+  tags: ["Full Time", "Presentation", "Communication"],
+  femaleOnly: true,
+  maleOnly: false,
+},
 ];
 
 function Careers() {

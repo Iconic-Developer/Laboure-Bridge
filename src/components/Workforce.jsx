@@ -5,190 +5,193 @@ import Footer from "./Footer.jsx";
 
 const gallery = [
   {
-    image: "/workforce/team_1.jpeg",
-    category: "workforce",
-    caption: "Our dedicated team ready to build the future.",
-  },
-  {
-    image: "/workforce/team_2.jpeg",
-    category: "site",
-    caption: "Precision work, strong foundations.",
-  },
-  {
-    image: "/workforce/team_3.jpeg",
-    category: "teamwork",
-    caption: "Working together to achieve more.",
-  },
-  {
-    image: "/workforce/team_4.jpeg",
-    category: "skilled",
-    caption: "Skilled hands at work, building with pride.",
-  },
-  {
-    image: "/workforce/team_5.jpeg",
-    category: "site",
-    caption: "Commitment to safety, commitment to quality.",
-  },
-  {
-    image: "/workforce/team_6.jpeg",
-    category: "teamwork",
-    caption: "Planning today, building tomorrow.",
-  },
-  {
-    image: "/workforce/team_7.jpeg",
-    category: "skilled",
-    caption: "Every detail matters, every time.",
-  },
-  {
-    image: "/workforce/team_8.jpeg",
-    category: "workforce",
-    caption: "United by teamwork, driven by purpose.",
-  },
-  {
-    image: "/workforce/team_9.jpeg",
-    category: "skilled",
-    caption: "Building stronger structures, together.",
-  },  {
-    image: "/workforce/team_10.jpeg",
-    category: "skilled",
-    caption: "Building stronger structures, together.",
-  },
-  {
-    image: "/workforce/team_11.jpeg",
-    category: "project",
-    caption: "Laying the groundwork for a better tomorrow.",
-  }, {
-    image: "/workforce/team_12.jpeg",
-    category: "teamwork",
-    caption: "Working together to achieve more.",
-  },
-  {
-    image: "/workforce/team_13.jpeg",
-    category: "skilled",
-    caption: "Skilled hands at work, building with pride.",
-  },
-  {
-    image: "/workforce/team_14.jpeg",
-    category: "site",
-    caption: "Commitment to safety, commitment to quality.",
-  },
-  {
-    image: "/workforce/team_15.jpeg",
-    category: "teamwork",
-    caption: "Planning today, building tomorrow.",
-  },
-  {
-    image: "/workforce/team_16.jpeg",
-    category: "skilled",
-    caption: "Every detail matters, every time.",
-  },
-  {
-    image: "/workforce/team_17.jpeg",
-    category: "workforce",
-    caption: "United by teamwork, driven by purpose.",
-  },
-  {
-    image: "/workforce/team_18.jpeg",
-    category: "skilled",
-    caption: "Building stronger structures, together.",
-  },
-  {
-    image: "/workforce/team_19.jpeg",
-    category: "skilled",
-    caption: "Expertise in every connection.",
-  },
-  {
-    image: "/workforce/team_20.jpeg",
-    category: "site",
-    caption: "Hard work today, stronger tomorrow.",
-  },
-  {
-    image: "/workforce/team_21.jpeg",
-    category: "project",
-    caption: "Laying the groundwork for a better tomorrow.",
-  },
-  {
-    image: "/workforce/team_22.jpeg",
-    category: "skilled",
-    caption: "Expertise in every connection.",
-  },
-  {
-    image: "/workforce/team_23.jpeg",
-    category: "site",
-    caption: "Hard work today, stronger tomorrow.",
-  },
-  {
-    image: "/workforce/team_24.jpeg",
-    category: "project",
-    caption: "Laying the groundwork for a better tomorrow.",
-  },{
-    image: "/workforce/team_25.jpeg",
-    category: "workforce",
-    caption: "Our dedicated team ready to build the future.",
-  },
-  {
-    image: "/workforce/team_26.jpeg",
-    category: "site",
-    caption: "Precision work, strong foundations.",
-  },
-  {
-    image: "/workforce/team_27.jpeg",
-    category: "teamwork",
-    caption: "Working together to achieve more.",
-  },
-  {
-    image: "/workforce/team_28.jpeg",
-    category: "skilled",
-    caption: "Skilled hands at work, building with pride.",
-  },
-  {
-    image: "/workforce/team_29.jpeg",
-    category: "site",
-    caption: "Commitment to safety, commitment to quality.",
-  },
-  {
-    image: "/workforce/team_30.jpeg",
-    category: "teamwork",
-    caption: "Planning today, building tomorrow.",
-  },
-  {
-    image: "/workforce/team_31.jpeg",
-    category: "skilled",
-    caption: "Every detail matters, every time.",
-  },
-  {
-    image: "/workforce/team_32.jpeg",
-    category: "workforce",
-    caption: "United by teamwork, driven by purpose.",
-  },
-  {
-    image: "/workforce/team_33.jpeg",
-    category: "skilled",
-    caption: "Building stronger structures, together.",
-  },
-  {
-    image: "/workforce/team_34.jpeg",
-    category: "skilled",
-    caption: "Expertise in every connection.",
-  },
- {
-  image: "/workforce/team_35.jpeg",
+  image: "/workforce/team_1.jpeg",
   category: "skilled",
+  caption: "Our dedicated team ready to build the future.",
+},
+{
+  image: "/workforce/team_2.jpeg",
+  category: "project",
+  caption: "Precision work, strong foundations.",
+},
+{
+  image: "/workforce/team_3.jpeg",
+  category: "workforce",
+  caption: "Working together to achieve more.",
+},
+{
+  image: "/workforce/team_4.jpeg",
+  category: "teamwork",
+  caption: "Skilled hands at work, building with pride.",
+},
+{
+  image: "/workforce/team_5.jpeg",
+  category: "site",
+  caption: "Commitment to safety, commitment to quality.",
+},
+{
+  image: "/workforce/team_6.jpeg",
+  category: "project",
+  caption: "Planning today, building tomorrow.",
+},
+{
+  image: "/workforce/team_7.jpeg",
+  category: "workforce",
+  caption: "Every detail matters, every time.",
+},
+{
+  image: "/workforce/team_8.jpeg",
+  category: "site",
+  caption: "United by teamwork, driven by purpose.",
+},
+{
+  image: "/workforce/team_9.jpeg",
+  category: "teamwork",
+  caption: "Building stronger structures, together.",
+},
+{
+  image: "/workforce/team_10.jpeg",
+  category: "workforce",
+  caption: "Building stronger structures, together.",
+},
+{
+  image: "/workforce/team_11.jpeg",
+  category: "site",
+  caption: "Laying the groundwork for a better tomorrow.",
+},
+{
+  image: "/workforce/team_12.jpeg",
+  category: "skilled",
+  caption: "Working together to achieve more.",
+},
+{
+  image: "/workforce/team_13.jpeg",
+  category: "project",
+  caption: "Skilled hands at work, building with pride.",
+},
+{
+  image: "/workforce/team_14.jpeg",
+  category: "teamwork",
+  caption: "Commitment to safety, commitment to quality.",
+},
+{
+  image: "/workforce/team_15.jpeg",
+  category: "workforce",
+  caption: "Planning today, building tomorrow.",
+},
+{
+  image: "/workforce/team_16.jpeg",
+  category: "site",
+  caption: "Every detail matters, every time.",
+},
+{
+  image: "/workforce/team_17.jpeg",
+  category: "project",
+  caption: "United by teamwork, driven by purpose.",
+},
+{
+  image: "/workforce/team_18.jpeg",
+  category: "workforce",
+  caption: "Building stronger structures, together.",
+},
+{
+  image: "/workforce/team_19.jpeg",
+  category: "teamwork",
+  caption: "Expertise in every connection.",
+},
+{
+  image: "/workforce/team_20.jpeg",
+  category: "skilled",
+  caption: "Hard work today, stronger tomorrow.",
+},
+{
+  image: "/workforce/team_21.jpeg",
+  category: "site",
+  caption: "Laying the groundwork for a better tomorrow.",
+},
+{
+  image: "/workforce/team_22.jpeg",
+  category: "project",
+  caption: "Expertise in every connection.",
+},
+{
+  image: "/workforce/team_23.jpeg",
+  category: "teamwork",
+  caption: "Hard work today, stronger tomorrow.",
+},
+{
+  image: "/workforce/team_24.jpeg",
+  category: "workforce",
+  caption: "Laying the groundwork for a better tomorrow.",
+},
+{
+  image: "/workforce/team_25.jpeg",
+  category: "site",
+  caption: "Our dedicated team ready to build the future.",
+},
+{
+  image: "/workforce/team_26.jpeg",
+  category: "skilled",
+  caption: "Precision work, strong foundations.",
+},
+{
+  image: "/workforce/team_27.jpeg",
+  category: "project",
+  caption: "Working together to achieve more.",
+},
+{
+  image: "/workforce/team_28.jpeg",
+  category: "teamwork",
+  caption: "Skilled hands at work, building with pride.",
+},
+{
+  image: "/workforce/team_29.jpeg",
+  category: "workforce",
+  caption: "Commitment to safety, commitment to quality.",
+},
+{
+  image: "/workforce/team_30.jpeg",
+  category: "site",
+  caption: "Planning today, building tomorrow.",
+},
+{
+  image: "/workforce/team_31.jpeg",
+  category: "project",
+  caption: "Every detail matters, every time.",
+},
+{
+  image: "/workforce/team_32.jpeg",
+  category: "skilled",
+  caption: "United by teamwork, driven by purpose.",
+},
+{
+  image: "/workforce/team_33.jpeg",
+  category: "teamwork",
+  caption: "Building stronger structures, together.",
+},
+{
+  image: "/workforce/team_34.jpeg",
+  category: "workforce",
+  caption: "Expertise in every connection.",
+},
+{
+  image: "/workforce/team_35.jpeg",
+  category: "site",
   caption: "Strength built through skill.",
 },
 {
   image: "/workforce/team_36.jpeg",
-  category: "skilled",
+  category: "project",
   caption: "Skilled hands, reliable results.",
 },
 {
   image: "/workforce/team_37.jpeg",
-  category: "skilled",
+  category: "teamwork",
   caption: "Precision that makes a difference.",
 },
 {
   image: "/workforce/team_38.jpeg",
-  category: "skilled",
+  category: "workforce",
   caption: "Committed to quality work.",
 },
 {
@@ -198,22 +201,22 @@ const gallery = [
 },
 {
   image: "/workforce/team_40.jpeg",
-  category: "skilled",
+  category: "site",
   caption: "Building with confidence and care.",
 },
 {
   image: "/workforce/team_41.jpeg",
-  category: "skilled",
+  category: "project",
   caption: "Professionalism in every task.",
 },
 {
   image: "/workforce/team_42.jpeg",
-  category: "skilled",
+  category: "teamwork",
   caption: "Skill that drives progress.",
 },
 {
   image: "/workforce/team_43.jpeg",
-  category: "skilled",
+  category: "workforce",
   caption: "Dedicated people, dependable work.",
 },
 {
@@ -223,35 +226,84 @@ const gallery = [
 },
 {
   image: "/workforce/team_45.jpeg",
-  category: "skilled",
+  category: "site",
   caption: "Quality begins with skilled hands.",
 },
 {
   image: "/workforce/team_46.jpeg",
-  category: "skilled",
+  category: "project",
   caption: "Work powered by experience.",
 },
 {
   image: "/workforce/team_47.jpeg",
-  category: "skilled",
+  category: "teamwork",
   caption: "Reliable skills. Strong results.",
 },
 {
   image: "/workforce/team_48.jpeg",
-  category: "skilled",
+  category: "workforce",
   caption: "Every task deserves the right expertise.",
 },
 {
   image: "/workforce/team_49.jpeg",
-  category: "skilled",
+  category: "site",
   caption: "Working together with purpose.",
 },
 {
   image: "/workforce/team_50.jpeg",
-  category: "skilled",
+  category: "project",
   caption: "Where skill meets dedication.",
 },
-  
+{
+  image: "/workforce/team_51.jpeg",
+  category: "teamwork",
+  caption: "Expert hands, reliable results.",
+},
+{
+  image: "/workforce/team_52.jpeg",
+  category: "workforce",
+  caption: "Strength built through hard work.",
+},
+{
+  image: "/workforce/team_53.jpeg",
+  category: "site",
+  caption: "Precision in every task.",
+},
+{
+  image: "/workforce/team_54.jpeg",
+  category: "skilled",
+  caption: "Together, we build with purpose.",
+},
+{
+  image: "/workforce/team_55.jpeg",
+  category: "project",
+  caption: "Experience that makes a difference.",
+},
+{
+  image: "/workforce/team_56.jpeg",
+  category: "teamwork",
+  caption: "Hard work powering every project.",
+},
+{
+  image: "/workforce/team_57.jpeg",
+  category: "workforce",
+  caption: "Crafted with skill and commitment.",
+},
+{
+  image: "/workforce/team_58.jpeg",
+  category: "site",
+  caption: "Dedicated hands behind every success.",
+},
+{
+  image: "/workforce/team_59.jpeg",
+  category: "skilled",
+  caption: "Professional skill, dependable performance.",
+},
+{
+  image: "/workforce/team_60.jpeg",
+  category: "project",
+  caption: "Every effort moves the project forward.",
+},
 ];
 
 const categories = [
