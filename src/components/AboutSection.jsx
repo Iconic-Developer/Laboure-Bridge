@@ -75,15 +75,15 @@ const AboutSection = () => {
       role: " Resource Planning",
       image: "/about/debajyoti.jpg",
     },
-    {
-      name: "Aniket Sharma",
-      role: " Resource Planning",
-      image: "/about/Aniket.jpeg",
-    }, {
-      name: "Sarit Bhattacharjee",
-      role: " Resource Planning",
-      image: "/about/sarit.jpg",
-    },
+    // {
+    //   name: "Aniket Sharma",
+    //   role: " Resource Planning",
+    //   image: "/about/Aniket.jpeg",
+    // }, {
+    //   name: "Sarit Bhattacharjee",
+    //   role: " Resource Planning",
+    //   image: "/about/sarit.jpg",
+    // },
     {
       name: "Anitesh Chakraborty",
       role: "Software Developer",
