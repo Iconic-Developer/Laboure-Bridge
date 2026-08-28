@@ -219,11 +219,7 @@ const gallery = [
   category: "workforce",
   caption: "Dedicated people, dependable work.",
 },
-{
-  image: "/workforce/team_44.jpeg",
-  category: "skilled",
-  caption: "Turning expertise into excellence.",
-},
+
 {
   image: "/workforce/team_45.jpeg",
   category: "site",
@@ -304,6 +300,96 @@ const gallery = [
   category: "project",
   caption: "Every effort moves the project forward.",
 },
+{
+  image: "/workforce/team_61.jpeg",
+  category: "teamwork",
+  caption: "Strong teamwork creates stronger results.",
+},
+{
+  image: "/workforce/team_62.jpeg",
+  category: "site",
+  caption: "Building progress through skill and dedication.",
+},
+{
+  image: "/workforce/team_63.jpeg",
+  category: "workforce",
+  caption: "Dedicated hands turning plans into reality.",
+},
+{
+  image: "/workforce/team_64.jpeg",
+  category: "safety",
+  caption: "Safety and responsibility come first on every site.",
+},
+{
+  image: "/workforce/team_65.jpeg",
+  category: "project",
+  caption: "Step by step, every project reaches new heights.",
+},
+{
+  image: "/workforce/team_66.jpeg",
+  category: "teamwork",
+  caption: "Together, we make every challenge achievable.",
+},
+{
+  image: "/workforce/team_67.jpeg",
+  category: "workforce",
+  caption: "Skilled workers powering progress every day.",
+},
+{
+  image: "/workforce/team_68.jpeg",
+  category: "site",
+  caption: "Precision work lays the foundation for success.",
+},
+{
+  image: "/workforce/team_69.jpeg",
+  category: "achievement",
+  caption: "Another milestone achieved through collective effort.",
+},
+{
+  image: "/workforce/team_70.jpeg",
+  category: "safety",
+  caption: "A safe workplace is the foundation of great work.",
+},
+{
+  image: "/workforce/team_71.jpeg",
+  category: "teamwork",
+  caption: "One team, one goal, one successful project.",
+},
+{
+  image: "/workforce/team_72.jpeg",
+  category: "project",
+  caption: "Commitment today creates success tomorrow.",
+},
+{
+  image: "/workforce/team_73.jpeg",
+  category: "workforce",
+  caption: "Hard work and expertise make progress possible.",
+},
+{
+  image: "/workforce/team_74.jpeg",
+  category: "site",
+  caption: "Every task completed brings us closer to the goal.",
+},
+{
+  image: "/workforce/team_75.jpeg",
+  category: "achievement",
+  caption: "Proud moments are built through consistent effort.",
+},
+{
+  image: "/workforce/team_76.jpeg",
+  category: "safety",
+  caption: "Working smart, working safely, working together.",
+},
+{
+  image: "/workforce/team_77.jpeg",
+  category: "teamwork",
+  caption: "Collaboration turns hard work into great achievements.",
+},
+{
+  image: "/workforce/team_7.jpeg",
+  category: "project",
+  caption: "Moving forward with purpose, passion, and teamwork.",
+},
 ];
 
 const categories = [
@@ -319,10 +405,25 @@ export default function Workforce() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [selectedImage, setSelectedImage] = useState(null);
 
+  // pagination logic
+
+const [currentPage, setCurrentPage] = useState(1);
+
+const imagesPerPage = 12;
+
   const filteredImages =
-    activeCategory === "all"
-      ? gallery
-      : gallery.filter((item) => item.category === activeCategory);
+  activeCategory === "all"
+    ? gallery
+    : gallery.filter((item) => item.category === activeCategory);
+
+const totalPages = Math.ceil(filteredImages.length / imagesPerPage);
+
+const startIndex = (currentPage - 1) * imagesPerPage;
+
+const currentImages = filteredImages.slice(
+  startIndex,
+  startIndex + imagesPerPage
+);
 
   return (
     <>
@@ -444,7 +545,10 @@ export default function Workforce() {
               className={
                 activeCategory === category.id ? "active" : ""
               }
-              onClick={() => setActiveCategory(category.id)}
+              onClick={() => {
+  setActiveCategory(category.id);
+  setCurrentPage(1);
+}}
             >
               {category.label}
             </button>
@@ -455,7 +559,7 @@ export default function Workforce() {
         {/* IMAGE GRID */}
         <div className="gallery-grid">
 
-          {filteredImages.map((item, index) => (
+          {currentImages.map((item, index) => (
             <div
               className={`gallery-item item-${index % 4}`}
               key={item.image}
@@ -478,7 +582,37 @@ export default function Workforce() {
           ))}
 
         </div>
+{totalPages > 1 && (
+  <div className="pagination">
 
+    <button
+      onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+      disabled={currentPage === 1}
+    >
+      ← Previous
+    </button>
+
+    {Array.from({ length: totalPages }, (_, index) => (
+      <button
+        key={index + 1}
+        className={currentPage === index + 1 ? "active" : ""}
+        onClick={() => setCurrentPage(index + 1)}
+      >
+        {index + 1}
+      </button>
+    ))}
+
+    <button
+      onClick={() =>
+        setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+      }
+      disabled={currentPage === totalPages}
+    >
+      Next →
+    </button>
+
+  </div>
+)}
       </section>
 
       {/* QUOTE BANNER */}

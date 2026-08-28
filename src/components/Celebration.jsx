@@ -105,6 +105,45 @@ const celebrations = [
   title: "Celebrating Together",
   description: "Bringing everyone together to celebrate the spirit of independence with pride and joy.",
 },
+
+// soni birthday
+{
+  id: 14,
+  type: "image",
+  image: "/celebration/soni_birthday_1.jpeg",
+  category: "Birthday",
+  title: "Birthday Joy",
+  description: "Sharing smiles, laughter, and warm wishes as we make every birthday a special celebration.",
+},
+
+{
+  id: 15,
+  type: "video",
+  image: "/celebration/soni_birthday_2.mp4",
+  category: "Birthday",
+  title: "A Day to Celebrate",
+  description: "Wishing our team members a birthday filled with happiness, laughter, and memorable moments.",
+},
+
+{
+  id: 16,
+  type: "video",
+  image: "/celebration/soni_birthday_3.mp4",
+  category: "Birthday",
+  title: "Cheers to Another Year",
+  description: "Celebrating another year of growth, success, and happiness with our amazing team.",
+},
+
+{
+  id: 17,
+  type: "video",
+  image: "/celebration/soni_birthday_4.mp4",
+  category: "Birthday",
+  title: "Birthday Joy",
+  description: "Sharing smiles, laughter, and warm wishes as we make every birthday a special celebration.",
+},
+
+
 ];
 
 const categories = [
