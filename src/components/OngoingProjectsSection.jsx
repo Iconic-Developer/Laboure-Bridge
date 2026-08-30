@@ -956,6 +956,41 @@ const mundraNMRProjects = [
            
               
   ];
+  
+  const bengal = [
+    {
+      id: 1,
+      title: "Construction site",
+      location: "Kolkata, West Bengal",
+      image: "/bengal/bengal_1.jpeg",
+      status: "Active",
+    }, {
+      id: 2,
+      title: "Construction site",
+      location: "Kolkata, West Bengal",
+      image: "/bengal/bengal_2.jpeg",
+      status: "Active",
+    },
+    
+    
+    {
+      id: 3,
+      title: "Construction site",
+      location: "Kolkata, West Bengal",
+      image: "/bengal/bengal_3.jpeg",
+      status: "Active",
+    }, 
+    
+    {
+      id: 4,
+      title: "Construction site",
+      location: "Kolkata, West Bengal",
+      image: "/bengal/bengal_4.jpeg",
+      status: "Active",
+    },   
+           
+              
+  ];
   return (
     <section
       id="ongoing-projects"
@@ -2447,6 +2482,62 @@ const mundraNMRProjects = [
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     onError={(e) => {
                       e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Mumbai+Site+${project.id}`;
+                    }}
+                  />
+                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                    {project.status}
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                    <h4 className="text-white font-semibold text-sm mb-1">
+                      {project.title}
+                    </h4>
+                    <p className="text-gray-200 text-xs flex items-center">
+                      <MapPin className="h-3 w-3 mr-1" />
+                      {project.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+
+
+
+{/*bengal Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <span className="text-yellow-500">Residential Building Project (Kolkata)</span> Sites
+              Location 
+            </h3>
+            <div className="flex items-center justify-center gap-4 text-gray-600 mb-6">
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2 text-yellow-500" />
+                <span className="text-lg font-medium">Kolkata, West Bengal</span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          {/* bengal Projects Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {bengal.map((project, index) => (
+              <div
+                key={project.id}
+                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group bg-white transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <img loading="lazy"
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onError={(e) => {
+                      e.target.src = `https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Kolkata+Site+${project.id}`;
                     }}
                   />
                   <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">

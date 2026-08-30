@@ -386,10 +386,66 @@ const gallery = [
   caption: "Collaboration turns hard work into great achievements.",
 },
 {
-  image: "/workforce/team_7.jpeg",
-  category: "project",
-  caption: "Moving forward with purpose, passion, and teamwork.",
+  image: "/workforce/team_78.jpeg",
+  category: "teamwork",
+  caption: "Together, every challenge becomes an opportunity to grow.",
 },
+{
+  image: "/workforce/team_79.jpeg",
+  category: "teamwork",
+  caption: "Strong teams build stronger results.",
+},
+{
+  image: "/workforce/team_80.jpeg",
+  category: "project",
+  caption: "Every task completed is another step toward success.",
+},
+{
+  image: "/workforce/team_81.jpeg",
+  category: "teamwork",
+  caption: "Unity and dedication make every project stronger.",
+},
+{
+  image: "/workforce/team_82.jpeg",
+  category: "workforce",
+  caption: "Skilled hands and committed minds keep progress moving.",
+},
+{
+  image: "/workforce/team_83.jpeg",
+  category: "project",
+  caption: "Hard work today creates better results tomorrow.",
+},
+{
+  image: "/workforce/team_84.jpeg",
+  category: "teamwork",
+  caption: "Working together, achieving more.",
+},
+{
+  image: "/workforce/team_85.jpeg",
+  category: "workforce",
+  caption: "Dedication on the ground drives success at every level.",
+},
+{
+  image: "/workforce/team_86.jpeg",
+  category: "teamwork",
+  caption: "Great teamwork turns individual effort into collective success.",
+},
+{
+  image: "/workforce/team_87.jpeg",
+  category: "project",
+  caption: "Progress is built through consistency, coordination, and commitment.",
+},
+{
+  image: "/workforce/team_88.jpeg",
+  category: "workforce",
+  caption: "Every worker plays an important role in building success.",
+},
+{
+  image: "/workforce/team_89.jpeg",
+  category: "teamwork",
+  caption: "When people work as one, possibilities become achievements.",
+},
+
 ];
 
 const categories = [
