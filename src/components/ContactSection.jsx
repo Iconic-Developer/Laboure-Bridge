@@ -44,13 +44,13 @@ const ContactSection = () => {
       city: "Chennai (Headquarters)",
       address:
         "16th Floor, 69, Pattur Koot Road, Temple, Kundrathur Road, off Mangadu, SriPandian Nagar, Mangadu, Chennai, Tamil Nadu - 600122",
-      phone: "+91 40 4567 8902",
+      phone: "+91 93636 51657",
       email: "aj@labourbridges.com",
     },
     {
       city: "Hyderabad",
       address: "H. NO .124 Flat no 14, Saraswathi Nagar, Lothkunta HYD",
-      phone: "+91 40 4567 8901",
+      phone: "+91 93636 51657",
       email: "aj@labourbridges.com",
     },
     {
