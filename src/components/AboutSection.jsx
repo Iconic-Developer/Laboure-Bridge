@@ -65,6 +65,12 @@ const AboutSection = () => {
       role: "Site Supervisior",
       image: "/about/subhajit.jpeg",
     },
+    
+    {
+      name: "Ahasanur Haque",
+      role: "Site Supervisior",
+      image: "/about/ahasanur.jpeg",
+    },
     {
       name: "Puja Sarkar",
       role: "Asst Manager-Resource & Mobilisation",
