@@ -443,8 +443,79 @@ const gallery = [
 {
   image: "/workforce/team_89.jpeg",
   category: "teamwork",
-  caption: "When people work as one, possibilities become achievements.",
+  caption: "Together, every challenge becomes an opportunity to succeed.",
 },
+{
+  image: "/workforce/team_90.jpeg",
+  category: "teamwork",
+  caption: "Strong teams build stronger results through trust and coordination.",
+},
+{
+  image: "/workforce/team_91.jpeg",
+  category: "teamwork",
+  caption: "Working together turns individual efforts into collective achievements.",
+},
+{
+  image: "/workforce/team_92.jpeg",
+  category: "teamwork",
+  caption: "Great teamwork begins with communication, trust, and respect.",
+},
+{
+  image: "/workforce/team_93.jpeg",
+  category: "teamwork",
+  caption: "One team, one vision, and countless possibilities.",
+},
+{
+  image: "/workforce/team_94.jpeg",
+  category: "teamwork",
+  caption: "Success grows when every team member contributes their best.",
+},
+{
+  image: "/workforce/team_95.jpeg",
+  category: "teamwork",
+  caption: "Together we share the work, the responsibility, and the success.",
+},
+{
+  image: "/workforce/team_96.jpeg",
+  category: "teamwork",
+  caption: "Coordination and commitment make every project stronger.",
+},
+{
+  image: "/workforce/team_97.jpeg",
+  category: "teamwork",
+  caption: "Behind every successful project is a team that works together.",
+},
+{
+  image: "/workforce/team_98.jpeg",
+  category: "teamwork",
+  caption: "Different skills, one team, and a common goal.",
+},
+{
+  image: "/workforce/team_99.jpeg",
+  category: "teamwork",
+  caption: "When we support each other, we achieve more together.",
+},
+{
+  image: "/workforce/team_100.jpeg",
+  category: "teamwork",
+  caption: "Teamwork transforms hard work into meaningful accomplishments.",
+},
+{
+  image: "/workforce/team_101.jpeg",
+  category: "teamwork",
+  caption: "Every contribution matters when building something together.",
+},
+{
+  image: "/workforce/team_102.jpeg",
+  category: "teamwork",
+  caption: "A united team can turn plans into real-world results.",
+},
+{
+  image: "/workforce/team_103.jpeg",
+  category: "teamwork",
+  caption: "Working side by side, we create progress that lasts.",
+},
+
 
 ];
 
