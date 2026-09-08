@@ -20,7 +20,7 @@ const HeroSection = () => {
 
         {/* seo section */}
 
-      <SEO title="Labour Bridge - Connecting Skilled Workers with Opportunities" description="Labour Bridge is a platform that connects skilled workers with job opportunities in the construction industry. We provide a seamless experience for both workers and employers, ensuring that the right talent meets the right projects." />
+      <SEO title="Skilled & Unskilled Construction Workers in India" description="Labour Bridge is a platform that connects skilled workers with job opportunities in the construction industry. We provide a seamless experience for both workers and employers, ensuring that the right talent meets the right projects." />
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">

@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen">
          <SEO 
-        title="About Us | Labour Bridge"
+        title="About Labour Bridges | Construction Workforce Solutions"
         description="Learn more about Labour Bridge and how we connect skilled workers with job opportunities."
       />
       <Navbar />

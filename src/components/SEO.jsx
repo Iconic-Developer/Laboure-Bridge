@@ -1,38 +1,137 @@
+
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const SEO = ({
-  title = "Labour Bridge",
-  description = "Labour Bridge - Skilled workers and job opportunities platform",
-  keywords = "Labour Bridge, skilled workers, job opportunities, construction industry, employment platform",
-  url = "https://www.labourbridges.com",
-  image = "/logo.png"
+  title = "Labour Bridges | Construction Labour & Workforce Solutions in India",
+
+  description =
+    "Labour Bridges connects contractors, construction companies and infrastructure projects with skilled and unskilled workers across India.",
+
+  url = "https://www.labourbridges.com/",
+
+  image = "https://www.labourbridges.com/logo.png",
+
+  type = "website",
 }) => {
+  // Make sure URLs always end consistently
+  const canonicalUrl = url.endsWith("/") ? url : `${url}/`;
+
   return (
     <Helmet>
-      {/* Basic SEO */}
+      {/* ==============================
+          BASIC SEO
+      ============================== */}
+
       <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="author" content="Labour Bridge Team" />
 
-      {/* Mobile responsive */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content={description}
+      />
 
-      {/* Open Graph (WhatsApp / Facebook / LinkedIn) */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
-      <meta property="og:image" content={image} />
+      <meta name="author" content="Labour Bridges" />
 
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta
+        name="robots"
+        content="index, follow, max-image-preview:large"
+      />
+
+      <link
+        rel="canonical"
+        href={canonicalUrl}
+      />
+
+      {/* ==============================
+          MOBILE
+      ============================== */}
+
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+      />
+
+      <meta
+        httpEquiv="content-language"
+        content="en-IN"
+      />
+
+      {/* ==============================
+          OPEN GRAPH
+          Facebook / WhatsApp / LinkedIn
+      ============================== */}
+
+      <meta
+        property="og:title"
+        content={title}
+      />
+
+      <meta
+        property="og:description"
+        content={description}
+      />
+
+      <meta
+        property="og:type"
+        content={type}
+      />
+
+      <meta
+        property="og:url"
+        content={canonicalUrl}
+      />
+
+      <meta
+        property="og:site_name"
+        content="Labour Bridges"
+      />
+
+      <meta
+        property="og:locale"
+        content="en_IN"
+      />
+
+      <meta
+        property="og:image"
+        content={image}
+      />
+
+      <meta
+        property="og:image:alt"
+        content="Labour Bridges - Construction Workforce Solutions"
+      />
+
+      {/* ==============================
+          TWITTER / X
+      ============================== */}
+
+      <meta
+        name="twitter:card"
+        content="summary_large_image"
+      />
+
+      <meta
+        name="twitter:title"
+        content={title}
+      />
+
+      <meta
+        name="twitter:description"
+        content={description}
+      />
+
+      <meta
+        name="twitter:image"
+        content={image}
+      />
+
+      <meta
+        name="twitter:image:alt"
+        content="Labour Bridges - Construction Workforce Solutions"
+      />
     </Helmet>
   );
 };
 
 export default SEO;
+
