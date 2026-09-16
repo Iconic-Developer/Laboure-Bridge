@@ -397,10 +397,10 @@ const ClientsSection = () => {
       {
         name: "Kruti Infratech",
         logo: "https://krutiprojects.com/assets/images/front-assets/images/logo.png",
-      }, {
-        name: "DEC",
-        logo: "https://decinfra.com/wp-content/uploads/2024/09/cropped-Dec-logo-Png.png",
-      }, {
+      // }, {
+      //   name: "DEC",
+      //   logo: "https://decinfra.com/wp-content/uploads/2024/09/cropped-Dec-logo-Png.png",
+      // }, {
         name: "Riveria",
         logo: "https://rivierainfra.com/wp-content/uploads/2025/07/RIPL-LOGO.svg",
       }, {
