@@ -41,11 +41,11 @@ const AboutSection = () => {
   ];
 
   const leadership = [
-    {
-      name: "Sunil K Nair",
-      role: "General Manager - Business Development",
-      image: "/about/sunil.jpg",
-    },
+    // {
+    //   name: "Sunil K Nair",
+    //   role: "General Manager - Business Development",
+    //   image: "/about/sunil.jpg",
+    // },
     // {
     //   name: "Shubajit Bhattacharjee",
     //   role: "Asst Manager- Site Supervisior (PAN INDIA)",
