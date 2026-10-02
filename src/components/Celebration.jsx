@@ -73,14 +73,7 @@ const celebrations = [
   description: "A proud celebration filled with patriotism, teamwork, and unforgettable moments.",
 },
 
-{
-  id: 10,
-  type: "image",
-  image: "/celebration/independence_1_2026.jpeg",
-  category: "Celebrations",
-  title: "Celebrating Together",
-  description: "Bringing everyone together to celebrate the spirit of independence with pride and joy.",
-},
+
 {
   id: 11,
   type: "image",
