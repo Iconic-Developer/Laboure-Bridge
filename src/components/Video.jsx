@@ -40,7 +40,7 @@ const Video = () => {
       
       
         >
-          <source src="index-reel.mp4" type="video/mp4" />
+          <source src="hero.mp4" type="video/mp4" />
           
         </video>
       )}
