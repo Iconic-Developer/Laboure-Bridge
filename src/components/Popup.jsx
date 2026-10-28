@@ -14,7 +14,7 @@ export default function Popup() {
 
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -44,7 +44,7 @@ export default function Popup() {
 
         <h2 id="popup-title">Welcome to Our Website!</h2>
 
-      <img src="popup.png" alt="popup" className="rounded-xl img-fluid object-cover mb-4" />
+      <img src="popup.avif" alt="popup" className="rounded-xl img-fluid object-cover mb-4" />
 
         <button className="popup-button" onClick={handleClose}>
           Got it!
