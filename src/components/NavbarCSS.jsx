@@ -13,9 +13,9 @@ const Navbar = () => {
     { name: "Clients", href: "/#clients", type: "hash" },
     { name: "Projects", href: "/projects", type: "route" },
     { name: "Milestones", href: "/milestones", type: "route" },
-    // { name: "Workforce", href: "/workforce", type: "route" },
     { name: "Careers", href: "/careers", type: "route" },
     { name: "Contact Us", href: "/contact", type: "route" },
+    { name: "LMS", href: "https://labourbridges.talentlms.com/plus/courses", target: "_blank", type: "route" },
   ];
 
   const toggleMenu = () => {
@@ -52,6 +52,7 @@ const Navbar = () => {
                   link.type === "route" ? (
                     <Link
                       key={link.name}
+                      target={link.target || "_self"}
                       to={link.href}
                       className="text-gray-700 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 hover:scale-105 transform"
                       style={{
@@ -157,6 +158,7 @@ const Navbar = () => {
                       <Link
                         key={link.name}
                         to={link.href}
+                        target={link.target || "_self"}
                         onClick={toggleMenu}
                         className="block px-4 py-3 text-gray-700 hover:text-blue-500 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:translate-x-2 transform"
                         style={{
