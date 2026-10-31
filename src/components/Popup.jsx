@@ -12,11 +12,18 @@ export default function Popup() {
       return;
     }
 
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-    }, 5000);
+    const img = new Image();
+    img.src = "/popup.avif";
 
-    return () => clearTimeout(timer);
+    const handleLoad = () => {
+      setIsOpen(true);
+    };
+
+    img.onload = handleLoad;
+
+    return () => {
+      img.onload = null;
+    };
   }, []);
 
   const handleClose = () => {
@@ -27,7 +34,7 @@ export default function Popup() {
   if (!isOpen) return null;
 
   return (
-    <div className="popup-overlay ">
+    <div className="popup-overlay">
       <div
         className="popup-content"
         role="dialog"
@@ -42,11 +49,20 @@ export default function Popup() {
           &times;
         </button>
 
-        <h2 id="popup-title">Welcome to Our Website!</h2>
+        <h2 id="popup-title">
+          Welcome to Our Website!
+        </h2>
 
-      <img src="popup.avif" alt="popup" className="rounded-xl img-fluid object-cover mb-4" />
+        <img
+          src="/popup.avif"
+          alt="popup"
+          className="rounded-xl img-fluid object-cover mb-4"
+        />
 
-        <button className="popup-button" onClick={handleClose}>
+        <button
+          className="popup-button"
+          onClick={handleClose}
+        >
           Got it!
         </button>
       </div>
