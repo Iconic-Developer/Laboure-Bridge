@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: "Milestones", href: "/milestones", type: "route" },
     { name: "Careers", href: "/careers", type: "route" },
     { name: "Contact Us", href: "/contact", type: "route" },
-    { name: "LMS", href: "https://labourbridges.talentlms.com/plus/courses", target: "_blank", type: "route" },
+    { name: "LMS", href: "/lms",  type: "route" },
   ];
 
   const toggleMenu = () => {

@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'Services', href: '#services' },
     { name: 'Contact', href: '#contact' },
     { name: 'Careers', href: '#careers' },
-    {name: 'LMS', href: 'https://labourbridges.talentlms.com/plus/courses', target: '_blank' },
+    {name: 'LMS', href: '#lms'}, 
     // { name: 'Workforce', href: '#workforce' },
   ];
 
