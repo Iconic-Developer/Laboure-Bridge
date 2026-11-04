@@ -117,7 +117,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-yellow-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-300">+91 40 4567 8902</span>
+                <span className="text-gray-300">+91 93636 51657</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-yellow-400 mr-3 flex-shrink-0" />
@@ -212,7 +212,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 LABOURBridge India. All rights reserved. | Privacy Policy |
+              © 2026 Labour Bridges India. All rights reserved. | Privacy Policy |
               Terms of Service
             </div>
 

@@ -41,170 +41,156 @@ const AboutSection = () => {
   ];
 
   const leadership = [
-    // {
-    //   name: "Sunil K Nair",
-    //   role: "General Manager - Business Development",
-    //   image: "/about/sunil.jpg",
-    // },
-    // {
-    //   name: "Shubajit Bhattacharjee",
-    //   role: "Asst Manager- Site Supervisior (PAN INDIA)",
-    //   image: "/about/shubajit.jpg",
-    // },
-    {
-      name: "Raju Paul",
-      role: "Site Supervisior",
-      image: "/about/raju.jpeg",
-    }, 
-    {
-      name: "Swapan Barui",
-      role: "Site Supervisior",
-      image: "/about/swapan.jpeg",
-    },  {
-      name: "Shubhajit Mandal",
-      role: "Site Supervisior",
-      image: "/about/subhajit.jpeg",
-    },
-    
-    {
-      name: "Ahasanur Haque",
-      role: "Site Supervisior",
-      image: "/about/ahasanur.jpeg",
-    },
-    {
-      name: "Puja Sarkar",
-      role: "Asst Manager-Resource & Mobilisation",
-      image: "/about/puja.jpg",
-    },
-    {
-      name: "Debajyoti Chakraborty",
-      role: " Resource Planning",
-      image: "/about/debajyoti.jpg",
-    },
-    // {
-    //   name: "Aniket Sharma",
-    //   role: " Resource Planning",
-    //   image: "/about/Aniket.jpeg",
-    // }, {
-    //   name: "Sarit Bhattacharjee",
-    //   role: " Resource Planning",
-    //   image: "/about/sarit.jpg",
-    // },
-    {
-      name: "Anitesh Chakraborty",
-      role: "Software Developer",
-      image: "/about/Ani.jpeg",
-    },
 
-    // interns team from 2026-06-01 to 2026-09-01
-    {
-      name: "Sakshi Shaw",
-      role: "Resource Planning",
-      image: "/about/sakshi.jpeg",
-    },
-     {
-      name: "Bidipto Das",
-      role: "Resource Planning",
-      image: "/about/bidipto.jpeg",
-    },  {
-      name: "Soumili Sarkar",
-      role: "Resource Planning",
-      image: "/about/soumili.jpeg",
-    },
- {
-      name: "Siddharth Kumar",
-      role: "Resource Planning",
-      image: "/about/siddharth.jpeg",
-    },
- {
-      name: "Saheli Das",
-      role: "Resource Planning",
-      image: "/about/saheli.jpeg",
-    },{
-      name: "Sneha Kumari Rai",
-      role: "Resource Planning",
-      image: "/about/sneha.jpeg",
-    },{
-      name: "Soni kumari jha",
-      role: "Resource Planning",
-      image: "/about/soni.jpeg",
-    },{
-      name: "Naba Daudi",
-      role: "Resource Planning",
-      image: "/about/naba.jpeg",
-    },{
-      name: "Shruti Tiu",
-      role: "Resource Planning",
-      image: "/about/shruti.jpeg",
-    },
-    {
-      name: "Sumana Manna",
-      role: "Resource Planning",
-      image: "/about/sumana.jpeg",
-    },
+  {
+  name: "Raju Paul",
+  role: "Site Supervisior",
+  image: "/about/raju.avif",
+},
+{
+  name: "Swapan Barui",
+  role: "Site Supervisior",
+  image: "/about/swapan.avif",
+},
+{
+  name: "Shubhajit Mandal",
+  role: "Site Supervisior",
+  image: "/about/subhajit.avif",
+},
+{
+  name: "Ahasanur Haque",
+  role: "Site Supervisior",
+  image: "/about/ahasanur.avif",
+},
+{
+  name: "Puja Sarkar",
+  role: "Asst Manager-Resource & Mobilisation",
+  image: "/about/puja.avif",
+},
+{
+  name: "Debajyoti Chakraborty",
+  role: "Resource Planning",
+  image: "/about/debajyoti.avif",
+},
+{
+  name: "Anitesh Chakraborty",
+  role: "Software Developer",
+  image: "/about/Ani.avif",
+},
 
-    // interns team from 2026-03-05 to 2026-06-05
-    {
-      name: "Aniket Raj",
-      role: " Resource Planning",
-      image: "/about/Aniket Raj.jpeg",
-    },
-    {
-      name: "Rahul R Kumar",
-      role: " Resource Planning",
-      image: "/about/Rahul.jpeg",
-    },
-    {
-      name: "Abhijit Dutta",
-      role: " Resource Planning",
-      image: "/about/Abhijit.jpeg",
-    },
-    {
-      name: "Subhranil Roy",
-      role: " Resource Planning",
-      image: "/about/subhranil.jpeg",
-    },
-    {
-      name: "Tamaghno Chakraborty",
-      role: " Resource Planning",
-      image: "/about/tamaghno.jpeg",
-    },
+// interns team from 2026-06-01 to 2026-09-01
+{
+  name: "Sakshi Shaw",
+  role: "Resource Planning",
+  image: "/about/sakshi.avif",
+},
+{
+  name: "Bidipto Das",
+  role: "Resource Planning",
+  image: "/about/bidipto.avif",
+},
+{
+  name: "Soumili Sarkar",
+  role: "Resource Planning",
+  image: "/about/soumili.avif",
+},
+{
+  name: "Siddharth Kumar",
+  role: "Resource Planning",
+  image: "/about/siddharth.avif",
+},
+{
+  name: "Saheli Das",
+  role: "Resource Planning",
+  image: "/about/saheli.avif",
+},
+{
+  name: "Sneha Kumari Rai",
+  role: "Resource Planning",
+  image: "/about/sneha.avif",
+},
+{
+  name: "Soni kumari jha",
+  role: "Resource Planning",
+  image: "/about/soni.avif",
+},
+{
+  name: "Naba Daudi",
+  role: "Resource Planning",
+  image: "/about/naba.avif",
+},
+{
+  name: "Shruti Tiu",
+  role: "Resource Planning",
+  image: "/about/shruti.avif",
+},
+{
+  name: "Sumana Manna",
+  role: "Resource Planning",
+  image: "/about/sumana.avif",
+},
 
-    {
-      name: "Pari Jaiswal",
-      role: " Resource Planning",
-      image: "/about/Pari.jpeg",
-    },
-    {
-      name: "Disha Gupta",
-      role: " Resource Planning",
-      image: "/about/Disha.jpeg",
-    },
-    {
-      name: "Archana jha",
-      role: " Resource Planning",
-      image: "/about/Archana.jpeg",
-    },
-    {
-      name: "Sudipa Biswas",
-      role: " Resource Planning",
-      image: "/about/Sudipa.jpeg",
-    },
-    {
-      name: "Tiyasha Shil",
-      role: " Resource Planning",
-      image: "/about/Tiyasha.jpeg",
-    },
-    {
-      name: "Shristy Agarwal",
-      role: " Resource Planning",
-      image: "/about/shristi.jpeg",
-    },
-    {
-      name: "Anushka Das",
-      role: " Resource Planning",
-      image: "/about/anushka.jpeg",
-    },
+// interns team from 2026-03-05 to 2026-06-05
+{
+  name: "Aniket Raj",
+  role: "Resource Planning",
+  image: "/about/Aniket Raj.avif",
+},
+{
+  name: "Rahul R Kumar",
+  role: "Resource Planning",
+  image: "/about/Rahul.avif",
+},
+{
+  name: "Abhijit Dutta",
+  role: "Resource Planning",
+  image: "/about/Abhijit.avif",
+},
+{
+  name: "Subhranil Roy",
+  role: "Resource Planning",
+  image: "/about/subhranil.avif",
+},
+{
+  name: "Tamaghno Chakraborty",
+  role: "Resource Planning",
+  image: "/about/tamaghno.avif",
+},
+{
+  name: "Pari Jaiswal",
+  role: "Resource Planning",
+  image: "/about/Pari.avif",
+},
+{
+  name: "Disha Gupta",
+  role: "Resource Planning",
+  image: "/about/Disha.avif",
+},
+{
+  name: "Archana jha",
+  role: "Resource Planning",
+  image: "/about/Archana.avif",
+},
+{
+  name: "Sudipa Biswas",
+  role: "Resource Planning",
+  image: "/about/Sudipa.avif",
+},
+{
+  name: "Tiyasha Shil",
+  role: "Resource Planning",
+  image: "/about/Tiyasha.avif",
+},
+{
+  name: "Shristy Agarwal",
+  role: "Resource Planning",
+  image: "/about/shristi.avif",
+},
+{
+  name: "Anushka Das",
+  role: "Resource Planning",
+  image: "/about/anushka.avif",
+},
   ];
 
   const industries = [
