@@ -401,7 +401,7 @@ const AboutSection = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Leadership Team
+            Team
             </h3>
             <p className="text-xl text-gray-600">
               Meet the experienced professionals driving our success
