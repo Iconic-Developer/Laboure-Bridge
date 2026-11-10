@@ -82,6 +82,38 @@ const AboutSection = () => {
   image: "/about/antika.avif",
 },
 
+{
+  name: "Shreyasi Samanta",
+  role: "Resource Planning",
+  image: "/about/shryeasi.avif",
+},
+
+
+{
+  name: "Suparna Adhikary",
+  role: "Resource Planning",
+  image: "/about/suparna.avif",
+},
+
+
+{
+  name: "Ananya Roy",
+  role: "Resource Planning",
+  image: "/about/ananya.avif",
+},
+
+{
+  name: "Kumkum Das",
+  role: "Resource Planning",
+  image: "/about/kumkum.avif",
+},
+
+{
+  name: "Sonia Sharma",
+  role: "Resource Planning",
+  image: "/about/sonia.avif",
+},
+
  {
   name: "Raju Paul",
   role: "Site Supervisior",
