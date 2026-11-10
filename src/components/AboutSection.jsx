@@ -309,7 +309,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}>
-            About <span className="text-yellow-500">LABOUR BRIDGES India</span>
+            About <span className="text-yellow-500">LABOUR BRIDGES INDIA</span>
           </motion.h2>
           <motion.div
             className="max-w-4xl mx-auto"
@@ -318,7 +318,7 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-              LABOURBridge India is a leading manpower outsourcing and labor
+              LABOUR BRIDGES INDIA is a leading manpower outsourcing and labor
               supply company in India, offering end-to-end staffing solutions.
               Headquartered in Chennai with regional offices in Hyderabad,
               Mumbai, Kerala, Gujarat, and Kolkata, we are committed to timely
