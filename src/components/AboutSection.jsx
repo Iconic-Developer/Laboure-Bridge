@@ -41,8 +41,48 @@ const AboutSection = () => {
   ];
 
   const leadership = [
+{
+  name: "Puja Sarkar",
+  role: "Asst Manager-Resource & Mobilisation",
+  image: "/about/puja.avif",
+},
+{
+  name: "Debajyoti Chakraborty",
+  role: "Resource Planning",
+  image: "/about/debajyoti.avif",
+},
+{
+  name: "Anitesh Chakraborty",
+  role: "Software Developer",
+  image: "/about/Ani.avif",
+},
+{
+  name: "Ramen Sadhukhan",
+  role: "Software Developer",
+  image: "/about/ramen.avif",
+},
+{
+  name: "Banani Karmakar",
+  role: "Resource Planning",
+  image: "/about/banani.avif",
+},
+{
+  name: "Raj Roy",
+  role: "Resource Planning",
+  image: "/about/raj.avif",
+},
+{
+  name: "Disha Halder",
+  role: "Resource Planning",
+  image: "/about/disha.avif",
+},
+{
+  name: "Antika Roy",
+  role: "Resource Planning",
+  image: "/about/antika.avif",
+},
 
-  {
+ {
   name: "Raju Paul",
   role: "Site Supervisior",
   image: "/about/raju.avif",
@@ -61,21 +101,6 @@ const AboutSection = () => {
   name: "Ahasanur Haque",
   role: "Site Supervisior",
   image: "/about/ahasanur.avif",
-},
-{
-  name: "Puja Sarkar",
-  role: "Asst Manager-Resource & Mobilisation",
-  image: "/about/puja.avif",
-},
-{
-  name: "Debajyoti Chakraborty",
-  role: "Resource Planning",
-  image: "/about/debajyoti.avif",
-},
-{
-  name: "Anitesh Chakraborty",
-  role: "Software Developer",
-  image: "/about/Ani.avif",
 },
 
 // interns team from 2026-06-01 to 2026-09-01
@@ -164,7 +189,7 @@ const AboutSection = () => {
 {
   name: "Disha Gupta",
   role: "Resource Planning",
-  image: "/about/Disha.avif",
+  image: "/about/Disha.jpeg",
 },
 {
   name: "Archana jha",
@@ -191,6 +216,7 @@ const AboutSection = () => {
   role: "Resource Planning",
   image: "/about/anushka.avif",
 },
+
   ];
 
   const industries = [
