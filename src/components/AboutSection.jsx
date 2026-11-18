@@ -77,6 +77,11 @@ const AboutSection = () => {
   image: "/about/disha_halder.avif",
 },
 {
+  name: "Sulagna Mandal",
+  role: "Resource Planning",
+  image: "/about/sulagna.avif",
+},
+{
   name: "Antika Roy",
   role: "Resource Planning",
   image: "/about/antika.avif",
