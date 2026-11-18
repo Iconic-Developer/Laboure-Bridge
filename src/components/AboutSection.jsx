@@ -52,6 +52,11 @@ const AboutSection = () => {
   role: "Asst Manager-Resource & Mobilisation",
   image: "/about/puja.avif",
 },
+{
+  name: "Dadan Chowdhary",
+  role: "Asst Manager-Resource & Mobilisation",
+  image: "/about/dadan.avif",
+},
 
 {
   name: "Anitesh Chakraborty",
@@ -63,11 +68,7 @@ const AboutSection = () => {
   role: "Software Developer",
   image: "/about/ramen.avif",
 },
-{
-  name: "Dadan Chowdhary",
-  role: "Resource Planning",
-  image: "/about/dadan.avif",
-},
+
 {
   name: "Banani Karmakar",
   role: "Resource Planning",
