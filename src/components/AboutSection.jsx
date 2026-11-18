@@ -41,16 +41,18 @@ const AboutSection = () => {
   ];
 
   const leadership = [
+    {
+      name: "Debajyoti Chakraborty",
+      role: "Asst Manager-Resource & Mobilisation",
+      image: "/about/debajyoti.avif",
+    },
+
 {
   name: "Puja Sarkar",
   role: "Asst Manager-Resource & Mobilisation",
   image: "/about/puja.avif",
 },
-{
-  name: "Debajyoti Chakraborty",
-  role: "Resource Planning",
-  image: "/about/debajyoti.avif",
-},
+
 {
   name: "Anitesh Chakraborty",
   role: "Software Developer",
@@ -60,6 +62,11 @@ const AboutSection = () => {
   name: "Ramen Sadhukhan",
   role: "Software Developer",
   image: "/about/ramen.avif",
+},
+{
+  name: "Dadan Chowdhary",
+  role: "Resource Planning",
+  image: "/about/dadan.avif",
 },
 {
   name: "Banani Karmakar",
@@ -75,6 +82,22 @@ const AboutSection = () => {
   name: "Disha Halder",
   role: "Resource Planning",
   image: "/about/disha_halder.avif",
+},
+{
+  name: "Sulagna Mandal",
+  role: "Resource Planning",
+  image: "/about/sulagna.avif",
+},
+
+{
+  name: "Saraswati Goswami",
+  role: "Resource Planning",
+  image: "/about/saraswati.avif",
+},
+{
+  name: "Ashka Shaw",
+  role: "Resource Planning",
+  image: "/about/ashka.avif",
 },
 {
   name: "Antika Roy",

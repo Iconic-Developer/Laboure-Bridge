@@ -259,7 +259,7 @@ const ClientsSection = () => {
 
           {
       name: "Tribeni Construction Ltd",
-      logo: "https://www.developmentaid.org/files/organizationLogos/tribeni-construction-ltd-80200.jpg",
+      logo: "https://static.wixstatic.com/media/e05fa8_b99401ede61343e9b1ab2f5d99a08e8d~mv2.jpg/v1/fill/w_330,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e05fa8_b99401ede61343e9b1ab2f5d99a08e8d~mv2.jpg",
     },
    
     {
@@ -282,7 +282,7 @@ const ClientsSection = () => {
       logo: "https://www.sathlokhar.com/images/sath-logo.png",
     },   {
       name: "Balajee Group",
-      logo: "https://balajeegroup.com/wp-content/uploads/2023/10/Balajee-logo.png",
+      logo: "https://balajeegroup.com/assets/images/balajee-official-logo.png",
     },
    
     {
@@ -317,7 +317,7 @@ const ClientsSection = () => {
     
     {
       name: "Wagad Infraprojects",
-      logo: "https://capsource-bucket.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/14134907/WagadInfraprojects2.jpg",
+      logo: "https://imgs.search.brave.com/M0gRDMcqyCJg6cBgyfZ4VWJn84V-AwbQUR76IoMylhI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9pbWcu/dGhlY29tcGFueWNo/ZWNrLmNvbS9jb21w/YW55bG9nby9XYWdh/ZF9JbmZyYV9Qcm9q/ZWN0c19QdnRfTHRk/XzhkOGM4NGQzLndl/YnA",
     },
     {
       name: "GVPR",
@@ -392,7 +392,7 @@ const ClientsSection = () => {
     
       {
         name: "G R Infraprojects Limited",
-        logo: "https://www.developmentaid.org/files/organizationLogos/g-r-infraprojects-limited-504422.jpg",
+        logo: "https://imgs.search.brave.com/hLkd2YoCVArsbH6EKWfeneZQoHQ22HZ306bun61yQbc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2hpdHRvcmdhcmgu/bmV0L2ltYWdlcy9p/cG8vZ3ItaW5mcmFw/cm9qZWN0cy1sb2dv/LnBuZw",
       },
       {
         name: "Kruti Infratech",
@@ -406,14 +406,17 @@ const ClientsSection = () => {
       }, {
         name: "Suroj Construction",
         logo: "https://bharatconstruction.net/images/client-logo/suroj.png",
-      }, {
+      },
+      
+     
+      {
         name: "Vivedha Construction",
         logo: "https://vidvedaa.com/assets/images/vidvedaa-logo-bg.jpg",
       },
-        {
-        name: "Amara Raja Batteries",
-        logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGN6WeIFfsang/company-logo_200_200/company-logo_200_200/0/1672753646757/amararaja_logo?e=2147483647&v=beta&t=NK9UA1mWW5Em-9u9yjw6j-4ikS7sVcRkC0pTPVcHBJA",
-      },
+       {
+      name: "Amara Raja Batteries",
+      logo: "https://imgs.search.brave.com/JUQ1IDZYeypDUQciTqjDWyOBXkedAZKymiJlklJYEv4/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZW5mc29sYXIuY29t/L0lEL2xvZ28vNjg3/YTc5MGY5OGQ4Mi5w/bmc_dj0x",
+    },
      
       
   ];
