@@ -101,6 +101,11 @@ const AboutSection = () => {
   image: "/about/ashka.avif",
 },
 {
+  name: "Anamika Shaw",
+  role: "Resource Planning",
+  image: "/about/anamika.avif",
+},
+{
   name: "Antika Roy",
   role: "Resource Planning",
   image: "/about/antika.avif",
